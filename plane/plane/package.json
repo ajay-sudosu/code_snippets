@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/makeplane/plane.git",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-turbo": "latest",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@7.17.1"
+}

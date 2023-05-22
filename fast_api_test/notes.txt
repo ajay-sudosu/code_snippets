@@ -1,0 +1,16 @@
+1. @app.get("/users/{user_id}", tags=["Users"])- this endpoint has custom response and custom response code
+2. Custom ShowUser and custom showitem pydantic models are in schema.py
+    In ShowUser it dosent matter if it is like this:
+        items: List[Item] or items: List[Item]=[](as in docs but better to go with the docs.)
+
+3. Routers:
+
+    a. In different routers file like(router_users.py) create an object for router like : router_user = APIRouter()
+    b. Then use that object in path decorator:  @router_user.post()
+    c. In main.py create an app object of FastApi():
+            app = FastApi()
+        And use this object to include all routers:
+            app.include_router(router_users.router_user)
+4. In hashing_file.py:
+    pwd_cxt.verify(plain_password,hashed_password) return True(Boolean) if password matches
+

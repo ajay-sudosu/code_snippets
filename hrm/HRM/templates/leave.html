@@ -1,0 +1,343 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% if messages %}
+      <ul class="messages">
+          {% for message in messages %}
+          {% if message.tags == 'success' %}
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <script src="{% static 'assets/js/jquery.toast.js' %}"></script>
+            <script>
+               var myToast =$.toast({
+                  heading: 'Success',
+                  text: '{{message}}',
+                  showHideTransition: 'slide',
+                  icon: 'success',
+                  position:'top-right'
+               })
+            </script>
+          {% else %}
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <script src="{% static 'assets/js/jquery.toast.js' %}"></script>
+            <script>
+               var myToast =$.toast({
+                  heading: 'Error',
+                  text: '{{message}}',
+                  showHideTransition: 'slide',
+                  icon: 'error',
+                  position:'top-right'
+               })
+            </script>
+          {% endif %}
+          {% endfor %}
+      </ul>
+      {% endif %}
+   <div class="page-wrapper">
+      <div class="content container-fluid">
+         <div class="row">
+            <div class="col-xl-12 col-sm-12 col-12 mb-4">
+               <div class="breadcrumb-path ">
+                  <ul class="breadcrumb">
+                     <li class="breadcrumb-item"><a href="/home"><img src="{% static 'assets/img/dash.png' %}" class="mr-2" alt="breadcrumb">Home</a></li>
+                     <li class="breadcrumb-item active"> Leave</li>
+                  </ul>
+
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xl-12 col-sm-12 col-12 ">
+               <div class="card">
+                  <div class="card-header">
+                     <h2 class="card-titles">Apply Leaves</h2>
+                  </div>
+
+                  <div class="form-creation">
+                      <form method="post" action="">
+                          {% csrf_token %}
+                     <div class="row">
+
+                        <div class="col-xl-6 col-sm-12 col-12 ">
+                           <div class="form-group">
+                              <label>From </label>
+                              <input type="date" name="start_date" required>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-sm-12 col-12 ">
+                           <div class="form-group">
+                              <label>To</label>
+                              <input type="date" name="end_date" required> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               <button id="add">add</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="new_class"></div>
+                     <div class="row">
+                          <div class="col-xl-4 col-sm-6 col-12 ">
+                           <div class="form-group">
+                              <label>Remaining Leaves</label>
+                              <input type="text" value="{{remaining_leave}}" name="remaining_leaves" class="remaining_leaves" disabled>
+                           </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-12 col-12 ">
+                           <div class="form-group">
+                              <label>Comment </label>
+                              <input type="text" name="comment" class="comment">
+                           </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-12 col-12 ">
+                           <div class="form-group">
+                              <label>Attachments</label>
+                              <input type="file" name="attachement" class="attachement">
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-xl-6 col-sm-12 col-12 ">
+                           <div class="form-group">
+                              <label>Reason </label>
+                              <textarea rows="2" cols="50" name="reason" class="reason">	</textarea>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-sm-12 col-12 ">
+                           <div class="form-group">
+                               <label for="department" class="form-control-label">Department</label>
+                        <!--<input class="form-control" name="department" placeholder="Select department">-->
+                        <select id="department" name="department" class="form-control department">
+                           <option value="{{request.user.department.department_name}}">{{request.user.department.department_name}}</option>
+                        </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-xl-12 col-sm-12 col-12 ">
+                           <div class="form-btn">
+                              <button type="submit" value="submit" class="btn btn-primary">Apply</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                           </div>
+                        </div>
+                     </div>
+                                </form>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xl-12 col-sm-12 col-12 ">
+               <div class="card">
+                  <div class="card-header">
+                     <h2 class="card-titles">Leave Summary</h2>
+                  </div>
+                  <div class="card-body p-0">
+                     <div class="table-responsive">
+                        <table class="table  custom-table  no-footer">
+                           <thead>
+                              <tr>
+                                 <th>Date</th>
+                                 <th>Total Employees</th>
+                                 <th>Full day Leave</th>
+                                 <th>First Half	</th>
+                                 <th>Second Half </th>
+                                 <th>Short Leave</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td><label>{{today_date}}</label></td>
+                                 <td><label>{{counts}} </label></td>
+                                 <td><label>{{fullday_leave}} </label></td>
+                                 <td><label>{{first_half}}</label></td>
+                                 <td><label>{{second_half}}</label></td>
+                                 <td><label>{{short_leave}} </label></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xl-12 col-sm-12 col-12 ">
+               <div class="card ">
+                  <div class="card-header">
+                     <h2 class="card-titles">Leave Details</h2>
+                  </div>
+                  <div class="card-body p-0">
+                     <div class="table-responsive">
+                        <table class="table  custom-table  no-footer">
+                           <thead>
+                              <tr>
+                                 <th>Employee</th>
+                                 <th>Leave Type </th>
+                                 <th>Date</th>
+                                 <th>Time</th>
+                                 <th>Notes</th>
+                                 <th>Status</th>
+                                 <th>Action</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                           {% for s_data in show_data %}
+                              <tr>
+                                 <td>
+                                    <div class="table-img">
+                                       <a href="profile.html"><img src="{{s_data.leave.user.image.url}}" alt="profile" class="img-table"></a>
+                                       <label>{{s_data.leave.user.first_name}}</label>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <label>{{s_data.leave_type}} </label>
+                                 </td>
+                                 <td>
+                                    <label>{{s_data.start_date}} </label>
+                                 </td>
+
+                                 <td>
+                                    <label>{% if s_data.start_time != None%}{{s_data.start_time}}-{{s_data.end_time}}{%else%}Fullday{%endif%}</label>
+                                 </td>
+                                 <td><label>{{s_data.leave.reason}}</label></td>
+                                 <td>
+                                    <label><a class="action_label3">Approved</a></label>
+                                 </td>
+                                 <td>
+                                    <label><a class="action_label4" data-toggle="modal" data-target="#delete">Delete <i data-feather="trash-2"></i> </a></label>
+                                 </td>
+                              </tr>
+                           {%endfor%}
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</div>
+
+<script>
+$(document).ready(function() {
+  $('#add').click(function() {
+    var start_date = $('input[name="start_date"]').val();
+    var end_date = $('input[name="end_date"]').val();
+    var date1 = new Date(start_date);
+    var date2 = new Date(end_date);
+    var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    var html = '';
+    for (var i = 0; i <= diffDays; i++) {
+      html += '<div class="row">';
+      html += '<div class="col-xl-2 col-sm-6 col-12">';
+      html += '<div class="form-group">';
+      html += '<label>Leave Type <span class="mandatory">*</span> </label>';
+      html += '<select class="select leave_type" name="leave_type[]" id="leave-type">';
+      html += '<option value="Select">Select</option>';
+      html += '<option value="Fullday">Fullday</option>';
+      html += '<option value="Halfday">Halfday</option>';
+      html += '<option value="Shortleave">Shortleave</option>';
+      html += '</select>';
+      html += '<div class="error-message" style="display:none; color:red;">Please select Leave type</div>';
+      html += '</div>';
+      html += '</div>';
+      html += '<div class="col-xl-2 col-sm-12 col-12">';
+      html += '<div class="form-group">';
+      html += '<label>Date </label>';
+      html += '<input type="date" class="start_date" name="start_date[]" required>';
+      html += '</div>';
+      html += '</div>';
+      html += '<div class="col-xl-2 col-sm-6 col-12 time-input" id="time-input">';
+      html += '<div class="form-group">';
+      html += '<label>Time-From</label>';
+      html += '<input type="time" class="start_time" name="start_time[]">';
+      html += '</div>';
+      html += '</div>';
+      html += '<div class="col-xl-2 col-sm-6 col-12 time-inputs" id="time-inputs">';
+      html += '<div class="form-group">';
+      html += '<label>Time-To</label>';
+      html += '<input type="time" class="end_time" name="end_time[]">';
+      html += '</div>';
+      html += '</div>';
+      html += '</div>';
+    }
+    $('.new_class').html(html);
+
+    // Hide the time inputs by default for all rows
+    $(".time-input, .time-inputs").hide();
+
+    // Apply changes to each row individually
+    $(".new_class .row").each(function() {
+      var row = $(this);
+
+      // Show/hide the time inputs based on the leave type selection for this row
+      row.find(".leave_type").on("change", function() {
+        if ($(this).val() == "Fullday") {
+          row.find(".time-input, .time-inputs").hide();
+        } else {
+          row.find(".time-input, .time-inputs").show();
+        }
+      });
+    });
+  });
+ $('form').on('submit', function(e) {
+    e.preventDefault(); // Prevent default form submit behavior
+   var leaveData = [];
+    var department = $('.department').val();
+    var reason = $('.reason').val();
+    var comment = $('.comment').val()
+    var remaining_leaves = $('.remaining_leaves').val()
+    console.log(department,"department")
+   var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+
+  $(".new_class .row").each(function() {
+    var leaveRow = {};
+    leaveRow.leaveType = $(this).find(".leave_type").val();
+    leaveRow.startDate = $(this).find(".start_date").val();
+    leaveRow.startTime = $(this).find(".start_time").val();
+    leaveRow.endTime = $(this).find(".end_time").val();
+    leaveData.push(leaveRow);
+  });
+
+      get_data= {'leaves': leaveData,
+                  'department':department,
+                  'comment':comment,
+                  'reason':reason,
+                  'remaining_leaves':remaining_leaves}
+      var jsonData = JSON.stringify(get_data);
+
+      console.log(jsonData, "form_data")
+      // Send AJAX request to the server with the form data
+      $.ajax({
+        url: '/employee_leaves', // Replace with your server-side script URL
+        type: 'POST',
+        data: jsonData,
+        headers: {
+    'Content-Type': 'application/json'
+  },
+        beforeSend: function(xhr) {
+          xhr.setRequestHeader('X-CSRFToken', csrftoken);
+        },
+        success: function(response) {
+          // Handle success response from
+            $('.remaining_leaves').val(response.message);
+          console.log("successssssssssssssssssssssssssssss", response.message)
+          window.location.reload();
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          // Handle error response from server
+          console.log("error")
+          e.preventDefault();
+        }
+      });
+
+  });
+});
+
+
+</script>
+
+
+{% endblock %}

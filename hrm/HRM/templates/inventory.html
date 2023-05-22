@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% if messages %}
+      <ul class="messages">
+          {% for message in messages %}
+          {% if message.tags == 'success' %}
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <script src="{% static 'assets/js/jquery.toast.js' %}"></script>
+            <script>
+               var myToast =$.toast({
+                  heading: 'Success',
+                  text: '{{message}}',
+                  showHideTransition: 'slide',
+                  icon: 'success',
+                  position:'top-right'
+               })
+            </script>
+          {% else %}
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <script src="{% static 'assets/js/jquery.toast.js' %}"></script>
+            <script>
+               var myToast =$.toast({
+                  heading: 'Error',
+                  text: '{{message}}',
+                  showHideTransition: 'slide',
+                  icon: 'error',
+                  position:'top-right'
+               })
+            </script>
+          {% endif %}
+          {% endfor %}
+      </ul>
+      {% endif %}
+<div class="page-wrapper">
+   <div class="content container-fluid">
+      <div class="row">
+          <div class="col-xl-12 col-sm-12 col-12 mb-4">
+   <div class="breadcrumb-path ">
+      <ul class="breadcrumb">
+         <li class="breadcrumb-item"><a href="/home"><img src="{% static 'assets/img/dash.png' %}" class="mr-2" alt="breadcrumb" />Home</a></li>
+         <li class="breadcrumb-item active"> Inventory</li>
+      </ul>
+   </div>
+</div>
+          <div class="col-xl-12 col-sm-12 col-12 mb-4">
+   <div class="head-link-set">
+      <ul>
+         <li><a href="/employee">All</a></li>
+         <li><a class="active" href="">Inventory</a></li>
+         <!--<li><a href="employee-office.html">Offices</a></li>-->
+      </ul>
+   </div>
+</div>
+         <div class="col-xl-12 col-sm-12 col-12 mb-4">
+            <div class="card">
+               <div class="table-heading">
+                  <h5>Employee Inventory</h5>
+               </div>
+               <div class="table-responsive">
+                  <table class="table  custom-table no-footer">
+                     <thead>
+                        <tr>
+                           <th>Name</th>
+                           <th>Title</th>
+                           <th>Item</th>
+                           <th>Laptop</th>
+                           <th>Mobile</th>
+                           <th>Remarks</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        {% for i in data %}
+                        <tr>
+                           <td>
+                              <label>{{i.first_name}} </label>
+                           </td>
+                           <td>
+                              <label>{{i.inventory.title}} </label>
+                           </td>
+                           <td><label>{{i.inventory.item}}</label></td>
+                           <td><label>{{i.inventory.is_laptop}}</label></td>
+                           <td><label>{{i.inventory.is_mobile}}</label></td>
+                           <td><label>{{i.inventory.remarks}}</label></td>
+                        </tr>
+                        {% endfor %}
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+{% endblock %}

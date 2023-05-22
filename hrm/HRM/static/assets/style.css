@@ -1,0 +1,303 @@
+.employee-content {
+    height: 48px;
+    }
+         .employee-image .avatar > img {
+         width: 50px!important;}
+         a.btn-add {
+         padding:5px 4px;
+         }
+         .head-link-set li a {
+         padding: 9px;
+         }
+         .table tr td label
+         {
+         font-weight: normal !important;
+         }
+         .table td, .table th {
+         padding: 6px;
+         }
+         .table thead tr th {
+         /* font-weight: 700; */
+         font-size: 18px;
+         padding-top: 8px;
+         padding-bottom: 8px;
+         }
+         label.employee_count {
+         padding: 5px;
+         font-size: 17px;
+         font-weight: 540;
+         }
+         body {
+         font-family: 'Oswald', sans-serif !important;
+         }
+         .table thead tr th {
+         font-weight: 540;
+         }
+         .table-heading {
+         padding: 16px;
+         }
+         .table {
+         color: #424cb8;
+         }
+         .head-link-set li {
+         min-width: 0px;
+         }
+         .head-link-set li a {
+         padding: 5px!important;
+         }
+         .customize_popup .modal-footer button {
+         width: 84px;
+         }
+         element.style {
+         }
+         .customize_popup button.btn.btn-primary {
+         padding: 2px;
+         font-size: 17px;
+         }
+         .customize_popup button.btn.btn-secondary {
+         padding: 2px;
+         font-size: 17px;
+         }
+         .customize_popup .modal-title {
+         font-size: 20px;
+         font-weight: 450;
+         }
+         .customize_popup button.btn.btn-primary {
+         padding: 2px;
+         margin-right: 1px;
+         }
+         element.style {
+         }
+         .customize_popup .modal-content {
+         padding: 10px;
+         }
+         .modal-content {
+         width: 80%!important;
+         }
+         .form-popup input[type="text"], .form-popup select {
+         height: 37px;
+         }
+         a.btn-add {
+         background: #8dc43d;
+         font-size: 15px;
+         padding-right:8px;
+         }
+         .head-link-set li a {
+         padding: 8px;
+         display: block;
+         text-align: center;
+         font-size: 14px;
+         font-weight: 50;
+         }
+         select {
+         margin: 1px;
+         }
+         .form-group select, .form-group input[type="text"] {
+         height: 47px;
+         }
+         .form-group textarea {
+         height: 54px!important;
+         }
+         .customize_popup .modal-header {
+         padding: 6px;
+         margin-bottom: -7px;
+         }
+         .col-xl-4 {
+         max-width: 24.333333% !important;
+         }
+         .card-body {
+         padding: 14px;
+         }
+         .employee-image .avatar > img {
+         width: 44px!important;
+         }
+         .card .card-header {
+         padding: 2px;
+         }
+         .employee-head h2 {
+         color: #6e5fb3;
+         font-size: 17px;
+         font-weight: 430;
+         padding-left: 6px;
+         }
+         svg {
+         height:16px;
+         }
+         .employee-head li a {
+         padding: 0px;
+         }
+         .employee-head ul li {
+         margin: 0px 3px;
+         }
+         .breadcrumb-path {
+         padding: 8px;
+         }
+         h1, h2, h3, h4, h5, h6 {
+          color: #1257dd;
+          }
+
+         .form-group select, .form-group input[type="text"] {
+         height: 40px;
+        }
+
+        .change_edit_color {
+        border-radius: 5px;
+        padding:5px;
+        background: #FF8D07;
+        text-align: center;
+        text-decoration: none;
+        }
+        .change_edit_color a {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        .change_edit_color a:visited {
+        color: #ADD8E6;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      .change_edit_color a:active {
+     color: yellow;
+     background-color: black;
+     text-decoration: underline;
+      }
+
+      .change_edit_color a:hover {
+     color: black;
+     background-color: transparent;
+     text-decoration: none;
+      }
+
+      .change_delete_color {
+        border-radius: 5px;
+        padding:5px;
+        background: red;
+        text-align: center;
+        text-decoration: none;
+        }
+        .change_delete_color a {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        .change_delete_color a:visited {
+        color: #ADD8E6;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      .change_delete_color a:active {
+     color: yellow;
+     background-color: black;
+     text-decoration: underline;
+      }
+
+      .change_delete_color a:hover {
+     color: black;
+     background-color: transparent;
+     text-decoration: none;
+      }
+      .img-table {
+    width: 60px;
+    height: 60px;
+    object-fit:fill;
+    }
+
+.error {
+  color: red;
+  margin-left: 5px;
+}
+
+label.error {
+  display: inline;
+}
+
+.employee-image .avatar > img {
+    width: 44px!important;
+    height: 44px;
+    object-fit: fill;
+}
+.head-link-set li {
+    min-width: 90px;
+}
+.change_edit_color {
+    width: fit-content;
+    padding: 5px 12px;
+    }
+
+    .change_delete_color {
+    width: fit-content;
+    }
+.table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+}
+.custom-table th:nth-child(2), .custom-table th:nth-child(3) {
+    text-align: right;
+}
+.change_edit_color{
+    width: 60px;
+    margin-left: auto;
+}
+.custom-table th:nth-child(2)  {
+    padding-right: 20px;
+    text-align: right;
+}
+
+.change_delete_color  {
+ margin-right: auto;
+}
+.custom-table th:nth-child(3) {
+text-align: left;
+}
+
+.user-img img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: fill;
+}
+.d-flex {
+    padding-left: 300px;
+}
+
+element.style {
+}
+.member-info ul li label {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+td {
+    color: black;
+
+}
+.member-info ul li span {
+    color: #0c0c0b;
+    font-weight: 545;
+}
+
+
+.svg-icon{
+ height:25px;
+ float: right;
+}
+.custom-table th:nth-child(2) {
+    text-align: left;
+}
+.custom-tables th:nth-child(2) {
+    text-align: right;
+}
+.svg-icons{
+ height:25px;
+}
+.btn-primary {
+    padding: 7px 0;
+    width: 75px;
+    background-color:#00882e;
+}

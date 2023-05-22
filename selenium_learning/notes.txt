@@ -1,0 +1,119 @@
+------------------------------------------------------------------------------------------------------------------------
+Chrome options:
+We can change the downloads directory in chrome:
+chromeOptions = Options()
+chromeOptions.add_experimental_option("pref", {"download.default_directory": "C:\Downloads\<foldername"})
+------------------------------------------------------------------------------------------------------------------------
+# navigation commands
+driver.back()
+driver.forward()
+------------------------------------------------------------------------------------------------------------------------
+# conditional commands (returns True or False)
+is_selected is used only for radio and checkbox buttons
+------------------------------------------------------------------------------------------------------------------------
+#wait commands
+implicitly_wait - applicable for all the elements.Tells the webdriver to wait before throwing exception(totally based on time)
+explicitly_wait - totally depends on condition not time
+------------------------------------------------------------------------------------------------------------------------
+form selenium.webdriver.support import expected_condition as EC
+wait = WebDriverWait(driver, 10) -> here 10 means 10secs ,means driver will wait for maximum 10 sec before throwing the element not found error
+but as soons as the element is present in the page it will go ahead.
+------------------------------------------------------------------------------------------------------------------------
+Working with input boxes:
+1. how many input elements are present in webpage.
+Usually we can calculate the len(element found using class name).
+2. how to provide value into the text box.
+3. how to get the status.
+    .is_displayed()
+    .is_enabled()
+------------------------------------------------------------------------------------------------------------------------
+Working with radio buttons
+1. We can us
+    .is_selected()
+------------------------------------------------------------------------------------------------------------------------
+Working with dropdown
+1. Select one option (the following methods does not return anything).
+    <dropdown_object>.select_by_value(value='IND')
+    <dropdown_object>.select_by_index() ## index starts from 0
+    <dropdown_object>.select_by_visible_text(text='IND')
+2. Capture options from the dropdown.
+    len(<dropdown_object>.options)
+    all_options = <dropdown_object>.options  ## it will be a list of all driver elements.
+3. Count how many options are present in the dropwdown.
+------------------------------------------------------------------------------------------------------------------------
+Working with pop-ups(alert windows) while opening a website.
+
+switch_to_alert().accept()  # it will accept the pop up.
+switch_to_alert().dismiss()  # it will cancel the pop up.
+------------------------------------------------------------------------------------------------------------------------
+Working with iframes:
+1. driver.switch_to.frame(id/name/web_element)
+    After doing the process in one iframe , you need to go back to default frame in order to go to any other frame.
+2. driver.switch_to.default_content() -> To go back to default frame.
+------------------------------------------------------------------------------------------------------------------------
+Working with windows:
+1. driver.current_window_handle
+    Return the id(some hexadecimal number) of parent tab.
+2. driver.window_handles (returns a list)
+    Returns the handle value of all the open tabs.
+    And we need to use switch_to.window(<handle_id>) function to go to other tab.
+------------------------------------------------------------------------------------------------------------------------
+Working with tabes:
+1.Get the number of rows by finding tr element.Loop over it from range (2, len(rows)) since 1 row is headers.
+2. Get the number of columns by finding td element. Loop over it from range(1, len(columns))
+    Think about matrix for 1st element of the table '2x1' will be the first element(2 is row and 1 is column).
+------------------------------------------------------------------------------------------------------------------------
+Working with scroll:
+1.scroll down by pixel
+    driver.execute_script("window.scrollBy(0, 1000)")
+    time.sleep(3)
+
+2. scroll down till element is visible.
+    element = driver.find_element(By.XPATH, '/html/body/div[7]/div/table[3]/tbody/tr[11]/td[2]/a')
+    driver.execute_script("arguments[0].scrollIntoView();", element)
+    time.sleep(3)
+
+3. scroll down till the page end.
+    driver.execute_script("window.scrollBy(0, document.body.scrollHeight)")
+------------------------------------------------------------------------------------------------------------------------
+Working with mouse:
+1. Mouse Hover
+    from selenium.webdriver import ActionChains
+    actions = ActionChains(driver)
+    actions.move_to_element(<element>).move_to_element(<element_2>).click().perform()
+2. Double click
+    actins.doube_click(<element>).perform()
+3. Right click
+    actions.context_click(<element>).perform()
+4. Drag and drop
+    actions.drag_and_drop(source=<source_element>, target=<destination_element>).perform()
+------------------------------------------------------------------------------------------------------------------------
+Working with cookies:
+Get all cookies:
+    driver.get_cookies()
+Adding a new cookie:
+    cookie_to_add = {"name": "my_cookie", "value": "test_cookie"} (make sure dict must have "name" as a key in it).
+    driver.add_cookie(cookie_to_add)
+------------------------------------------------------------------------------------------------------------------------
+Working with unit testing:
+1. setUp method (make it a class method)
+    This method will execute(first) before any other method or test cases written, means this method will be executed
+    multiple times before every test case.
+2. tearDown method
+    This method is same as above only difference that it will run after every test case not before.
+3. setUpClass
+    This method will execute only once before any test cases run and even before the setUp method above.
+4. tearDownClass
+    This method will execute only once after any test cases run and even after the tearDown method above.
+
+The following two methods will run outside the class since they are at module level.
+5. setUpModule:
+This method will run once before anything starts.
+6. tearDownModule:
+    This method will execute at last after class.
+
+7. Skipping tests.
+    a. @unittest.SkipTest -> this decorator will skit the test case
+    b. @unittest.skip("It is not ready yet.") -> skip with a reason.
+    c skipping with a condition.
+        => @unittest.skipIf(1 == 1, "This condition is not met.") 

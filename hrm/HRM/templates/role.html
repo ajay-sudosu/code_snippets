@@ -1,0 +1,278 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% if messages %}
+      <ul class="messages">
+          {% for message in messages %}
+          {% if message.tags == 'success' %}
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <script src="{% static 'assets/js/jquery.toast.js' %}"></script>
+            <script>
+               var myToast =$.toast({
+                  heading: 'Success',
+                  text: '{{message}}',
+                  showHideTransition: 'slide',
+                  icon: 'success',
+                  position:'top-right'
+               })
+            </script>
+          {% else %}
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <script src="{% static 'assets/js/jquery.toast.js' %}"></script>
+            <script>
+               var myToast =$.toast({
+                  heading: 'Error',
+                  text: '{{message}}',
+                  showHideTransition: 'slide',
+                  icon: 'error',
+                  position:'top-right'
+               })
+            </script>
+          {% endif %}
+          {% endfor %}
+      </ul>
+      {% endif %}
+<div class="page-wrapper">
+<div class="content container-fluid">
+<div class="row">
+<div class="col-xl-12 col-sm-12 col-12 mb-4">
+   <div class="breadcrumb-path ">
+      <ul class="breadcrumb">
+         <li class="breadcrumb-item"><a href="/home"><img src="{% static 'assets/img/dash.png' %}" class="mr-2" alt="breadcrumb" />Home</a></li>
+         <li class="breadcrumb-item active"> Designation</li>
+      </ul>
+   </div>
+</div>
+<div class="col-xl-12 col-sm-12 col-12 mb-4">
+   <div class="head-link-set">
+      <ul>
+         <li><a href="/employee">All</a></li>
+         <li><a class="active" href="#">Designation</a></li>
+         <!--<li><a href="employee-office.html">Offices</a></li>-->
+      </ul>
+      {% if request.user.is_admin or request.user.is_superuser %}
+      <a class="btn-add" data-toggle="modal" data-target="#addteam"><i data-feather="plus"></i> Add Designation</a>
+      {% endif %}
+   </div>
+</div>
+<div class="col-xl-12 col-sm-12 col-12 ">
+<div class="card m-0">
+<div class="card-body pb-0">
+     <div class="col-xl-12 col-sm-12 col-12 mb-4">
+            <div class="card">
+               <div class="table-heading">
+                  <h5>Designation's</h5>
+               </div>
+               <div class="table-responsive">
+                  <table class="table  custom-tables no-footer">
+                     <thead>
+                        <tr>
+                           <th>Designation</th>
+                           {% if request.user.is_admin or request.user.is_superuser %}
+                           <th>Edit</th>
+                           <th>Delete</th>
+                           {% endif %}
+                        </tr>
+                     </thead>
+                     <tbody>
+                        {%for role in roles%}
+                        <tr>
+                           <td>
+                              <label class="action_lab">{{role.role_name}} </label>
+                           </td>
+                           {% if request.user.is_admin or request.user.is_superuser %}
+                           <td>
+                                <a href="{% url 'update_role' role.id %}" id="{{role.id}}" class="edit_employee" data-toggle="modal" data-target="#edit"><img class="svg-icon" src="{% static 'assets/img/edit.png' %}"></a>
+<!--                              <div class="btn btn-info change_link_color">-->
+<!--                                 <a href="#">Edit</a>-->
+<!--                              </div>-->
+                           </td>
+                           <td>
+                               <a href="" id="{{role.id}}" class="delete_employee" data-toggle="modal" data-target="#delete_modal"><img class="svg-icons" src="{% static 'assets/img/delete.png' %}"></a>
+
+                           </td>
+                           {% endif %}
+                        </tr>
+                        {%endfor%}
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="customize_popup">
+            <div class="modal" tabindex="-1" id="delete_modal" aria-labelledby="staticBackdropLabela" aria-hidden="true">
+               <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabela">Confirm Delete</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                     </div>
+                     <div class="modal-body">
+                           <div class=" col-md-12 p-0">
+                              <div class=" form-popup m-0">
+                                 <p>Are you sure you want to delete this.?</p>
+                              </div>
+                           </div>
+                     </div>
+                     <div class="modal-footer">
+                     <a type="submit" class="btn btn-primary deleteed">Delete</a>
+                     <a type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
+                     </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+<!--   <div class="row">-->
+<!--      {%for role in roles%}-->
+<!--      <div class="col-xl-4">-->
+<!--         <div class="card">-->
+<!--            <div class="card-header">-->
+<!--               <div class="employee-head">-->
+<!--                  <h2>{{role.role_name}}</h2>-->
+<!--                  <ul>-->
+<!--                     <li><a href="{% url 'update_role' role.id %}" id="{{role.id}}" class="edit_employee" data-toggle="modal" data-target="#edit"><i data-feather="edit"></i></a></li>-->
+<!--                     <li><a href="{% url 'delete_role' role.id %}"><i data-feather="trash-2"></i></a></li>-->
+<!--                  </ul>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--            -->
+<!--         </div>-->
+<!--      </div>-->
+<!--      {%endfor%}-->
+<!--   </div>-->
+   <div class="customize_popup">
+      <div class="modal fade" id="addteam" tabindex="-1" aria-labelledby="staticBackdropLabela" aria-hidden="true">
+         <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabela">Create New Designation</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form method="post" action="">
+                     {% csrf_token %}
+                     <div class=" col-md-12 p-0">
+                        <div class=" form-popup m-0">
+                           <input type="text" placeholder="Name" name="role_name" value="{{role}}">{{role}}
+                        </div>
+                     </div>
+               </div>
+               <div class="modal-footer">
+               <button type="submit" class="btn btn-primary">Add</button>
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+               </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="customize_popup">
+      <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="staticBackdropLa" aria-hidden="true">
+         <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLa">Edit Designation</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form method="post" action="">
+                     {% csrf_token %}
+                     <div class=" col-md-12 p-0">
+                        <div class=" form-popup m-0">
+                           <input type="text" id="dep_name" placeholder="Name" name="role_name" value="">
+
+                        </div>
+                     </div>
+
+               </div>
+               <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Add</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+               </div>
+            </div>
+              </form>
+         </div>
+      </div>
+   </div>
+
+</div>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+   <script type="text/javascript">
+
+$(document).on('click', '.delete_employee', function(){
+   get_id =  $(this).attr('id')
+   $('.deleteed').on('click',function(){
+      ne_id =  $('.deleteed').attr('id', get_id)
+      console.log(ne_id, "----=====")
+      delete_id = $('.deleteed').attr('id')
+var url = "delete_role/" + delete_id
+$.ajax({
+            type: "GET",
+            data: { id: delete_id },
+            url:url,
+            success: (data) => {
+                console.log(data);
+                console.log(data.message);
+               window.location.replace("/roles");
+              },
+              error: (error) => {
+                console.log(error);
+              }
+        });
+});
+});
+
+$(document).ready(function(){
+    $(".edit_employee").click(function(event){
+      var value = this.id;
+      var url = "update_role/" + value
+         $.ajax({
+            type: "GET",
+            data: { id: value },
+            url:url,
+            success: (data) => {
+                console.log(data);
+                 $("input:text").val(data);
+              },
+              error: (error) => {
+                console.log(error);
+              }
+        });
+    });
+});
+
+$(document).ready(function(){
+    $(".edit_employee").click(function(event){
+      var emp_id = this.id;
+      $('input[name=role_name]').change(function() {
+      var name = $(this).val()
+      url = "update_role/" + emp_id
+      var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+$.ajax({
+            type: "POST",
+            data: { emp_id: emp_id , name:name},
+            url:url,
+            beforeSend: function (xhr){
+              xhr.setRequestHeader('X-CSRFToken', csrftoken);
+            },
+            success: (data) => {
+                console.log(data);
+                window.location.replace("/roles");
+              },
+              error: (error) => {
+                console.log(error);
+              }
+        });
+ });
+ });
+ });
+   </script>
+{% endblock %}

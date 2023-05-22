@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <title>Session</title>
+</head>
+<body>
+    <h1 class="container">Hello world</h1>
+<div class="container">
+{% for product in products  %}
+
+    <h2>{{ product.title }}</h2>
+    <img src="{{product.image_url}}" height="180" width="250" loading="lazy">
+    <a href="{%url 'products' product.id %}"><h3>{{product.title}}</h3></a>
+        {% endfor %}
+        </div>
+
+</body>
+</html>

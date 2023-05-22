@@ -1,0 +1,307 @@
+2023-04-24 18:27:57,284 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Punganur UO - AP113( 09-JUN-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-24 18:28:16,694 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Punganur UO - AP113( 09-JUN-2022 ),model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-24 18:30:12,514 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Punganur UO - AP113( 09-JUN-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-24 18:30:31,720 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Punganur UO - AP113( 09-JUN-2022 ),model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 11:34:01,187 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Srikakulam RTA - AP30( 25-APR-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 11:35:05,591 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Srikakulam RTA - AP30( 25-APR-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 11:36:20,108 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Srikakulam RTA - AP30( 25-APR-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 12:04:24,598 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Tirupati RTA - AP103( 25-APR-2022 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-25 12:12:34,807 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Tirupati RTA - AP103( 25-APR-2022 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-25 12:12:56,257 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Tirupati RTA - AP103( 25-APR-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 12:33:06,259 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Tirupati RTA - AP103( 25-APR-2022 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-25 12:33:27,750 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Tirupati RTA - AP103( 25-APR-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 12:33:49,079 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Tirupati RTA - AP103( 25-APR-2022 ),model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 12:34:40,120 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Tirupati RTA - AP103( 25-APR-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 12:35:44,013 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Tirupati RTA - AP103( 25-APR-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 12:37:16,187 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Tirupati RTA - AP103( 25-APR-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 13:50:59,114 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Vijayawada RTA - AP16( 17-FEB-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 13:52:04,286 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Vijayawada RTA - AP16( 17-FEB-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 13:53:08,557 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Vijayawada RTA - AP16( 17-FEB-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 16:25:24,913 - vahan_logger - ERROR - Error for state-Arunachal Pradesh(26),rto-NAMSAI - AR20( 26-JUL-2019 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 16:26:33,423 - vahan_logger - ERROR - Error for state-Arunachal Pradesh(26),rto-NAMSAI - AR20( 26-JUL-2019 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 16:27:37,148 - vahan_logger - ERROR - Error for state-Arunachal Pradesh(26),rto-NAMSAI - AR20( 26-JUL-2019 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 16:29:08,712 - vahan_logger - ERROR - Error for state-Arunachal Pradesh(26),rto-NAMSAI - AR20( 26-JUL-2019 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 17:51:29,989 - vahan_logger - ERROR - Error for state-Assam(36),rto-HAILAKANDI - AS24( 11-MAR-2019 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 17:52:33,785 - vahan_logger - ERROR - Error for state-Assam(36),rto-HAILAKANDI - AS24( 11-MAR-2019 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 17:53:37,609 - vahan_logger - ERROR - Error for state-Assam(36),rto-HAILAKANDI - AS24( 11-MAR-2019 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 17:55:09,257 - vahan_logger - ERROR - Error for state-Assam(36),rto-HAILAKANDI - AS24( 11-MAR-2019 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 18:27:00,267 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 18:28:03,678 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 18:29:07,326 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 18:30:39,018 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 18:31:48,479 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 18:32:09,698 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 18:32:49,515 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 18:33:10,790 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-DIESEL
+2023-04-25 18:33:50,723 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 18:34:11,966 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-25 18:35:29,974 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 18:35:51,512 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-25 18:40:57,303 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 18:41:18,516 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 18:41:58,422 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 18:42:19,707 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-DIESEL
+2023-04-25 18:43:00,811 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 18:43:22,198 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-25 18:43:43,406 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-E-RICKSHAW WITH CART (G),fuel_type-ELECTRIC(BOV)
+2023-04-25 18:44:46,981 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 18:45:08,278 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-25 19:01:03,399 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-25 19:01:24,735 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 19:01:45,982 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 19:02:25,794 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 19:02:47,087 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-DIESEL
+2023-04-25 19:03:27,125 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 19:03:48,368 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-25 19:04:09,581 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-E-RICKSHAW WITH CART (G),fuel_type-ELECTRIC(BOV)
+2023-04-25 19:04:30,801 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-E-RICKSHAW(P),fuel_type-ELECTRIC(BOV)
+2023-04-25 19:05:10,724 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 19:05:31,882 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-25 19:18:38,498 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 19:18:59,688 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 19:19:39,614 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 19:20:00,795 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-DIESEL
+2023-04-25 19:20:40,798 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 19:21:02,052 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-25 19:21:23,266 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-E-RICKSHAW WITH CART (G),fuel_type-ELECTRIC(BOV)
+2023-04-25 19:21:44,486 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-E-RICKSHAW(P),fuel_type-ELECTRIC(BOV)
+2023-04-25 19:22:24,335 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 19:22:45,569 - vahan_logger - ERROR - Error for state-Assam(36),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-25 20:11:18,400 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 20:12:21,862 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 20:13:25,351 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:14:56,916 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 20:16:06,372 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 20:16:27,599 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 20:17:07,497 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 20:17:28,657 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-DIESEL
+2023-04-25 20:18:08,571 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:18:29,919 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:19:47,537 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 20:20:08,738 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-25 20:28:59,674 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 20:29:20,925 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 20:30:00,752 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 20:30:21,992 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-DIESEL
+2023-04-25 20:31:01,818 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:31:23,115 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:31:44,288 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-E-RICKSHAW WITH CART (G),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:32:47,724 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 20:33:08,874 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-25 20:50:01,999 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-25 20:50:23,228 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 20:50:44,468 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 20:51:33,783 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 20:51:55,139 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-DIESEL
+2023-04-25 20:52:35,074 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:52:56,279 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:53:17,497 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-E-RICKSHAW WITH CART (G),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:53:38,740 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-E-RICKSHAW(P),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:54:18,638 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 20:54:40,106 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-25 20:55:12,027 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-25 20:55:33,265 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 20:55:54,455 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 20:56:20,245 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (GOODS),fuel_type-DIESEL
+2023-04-25 20:57:28,418 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:57:49,621 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:58:10,865 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-E-RICKSHAW WITH CART (G),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:58:32,098 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-E-RICKSHAW(P),fuel_type-ELECTRIC(BOV)
+2023-04-25 20:59:11,987 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 20:59:33,210 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-25 21:28:46,296 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-25 21:29:07,486 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 21:29:28,711 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 21:29:54,551 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (GOODS),fuel_type-DIESEL
+2023-04-25 21:31:02,660 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 21:31:23,927 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-25 21:31:45,323 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-E-RICKSHAW WITH CART (G),fuel_type-ELECTRIC(BOV)
+2023-04-25 21:32:06,588 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-E-RICKSHAW(P),fuel_type-ELECTRIC(BOV)
+2023-04-25 21:32:46,390 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 21:33:07,625 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-25 21:50:35,062 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 21:50:56,273 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 21:51:36,361 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 21:51:57,527 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-DIESEL
+2023-04-25 21:52:37,440 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 21:52:58,643 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-25 21:53:20,027 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-E-RICKSHAW WITH CART (G),fuel_type-ELECTRIC(BOV)
+2023-04-25 21:53:41,296 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-E-RICKSHAW(P),fuel_type-ELECTRIC(BOV)
+2023-04-25 21:54:21,233 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 21:54:42,460 - vahan_logger - ERROR - Error for state-Bihar(49),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-25 22:13:13,674 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 22:14:17,101 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 22:15:20,583 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 22:16:52,076 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 22:39:06,521 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 22:39:27,750 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 22:40:07,629 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 22:40:28,802 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PERSONAL),fuel_type-DIESEL
+2023-04-25 22:41:08,664 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 22:41:29,841 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-25 22:42:47,333 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 22:43:08,592 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-25 22:59:56,045 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 23:00:17,229 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 23:00:57,165 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 23:01:18,385 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PERSONAL),fuel_type-DIESEL
+2023-04-25 23:01:58,275 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 23:02:19,497 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-25 23:02:40,699 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-E-RICKSHAW WITH CART (G),fuel_type-ELECTRIC(BOV)
+2023-04-25 23:03:44,106 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 23:04:05,283 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-25 23:04:51,380 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 23:05:12,561 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-25 23:05:52,510 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-25 23:06:13,805 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PERSONAL),fuel_type-DIESEL
+2023-04-25 23:06:53,712 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-25 23:07:14,931 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-25 23:07:36,207 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-E-RICKSHAW WITH CART (G),fuel_type-ELECTRIC(BOV)
+2023-04-25 23:07:57,401 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-E-RICKSHAW(P),fuel_type-ELECTRIC(BOV)
+2023-04-25 23:08:37,249 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-25 23:08:58,510 - vahan_logger - ERROR - Error for state-Chhattisgarh(30),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-25 23:10:17,116 - vahan_logger - ERROR - Error for state-Delhi(23),rto-RAJPUR ROAD/VIU BURARI - DL51( 08-APR-2016 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-25 23:10:38,294 - vahan_logger - ERROR - Error for state-Delhi(23),rto-RAJPUR ROAD/VIU BURARI - DL51( 08-APR-2016 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-25 23:10:59,467 - vahan_logger - ERROR - Error for state-Delhi(23),rto-RAJPUR ROAD/VIU BURARI - DL51( 08-APR-2016 ),model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-26 00:19:30,417 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 00:19:51,583 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 00:20:54,985 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-26 00:21:58,414 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-26 00:23:30,029 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-26 00:24:25,463 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 00:24:46,667 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 00:25:07,881 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-26 00:25:57,207 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-26 00:26:18,457 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (PERSONAL),fuel_type-DIESEL
+2023-04-26 00:26:58,705 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-26 00:27:20,126 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-26 00:28:37,618 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-26 00:28:58,810 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-26 01:00:54,723 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 01:01:16,376 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 13:35:03,210 - vahan_logger - ERROR - Error for state-Delhi(23),rto-RAJPUR ROAD/VIU BURARI - DL51( 08-APR-2016 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 13:35:24,405 - vahan_logger - ERROR - Error for state-Delhi(23),rto-RAJPUR ROAD/VIU BURARI - DL51( 08-APR-2016 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 13:35:45,606 - vahan_logger - ERROR - Error for state-Delhi(23),rto-RAJPUR ROAD/VIU BURARI - DL51( 08-APR-2016 ),model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-26 14:47:42,656 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-KHAMBHALIYA - GJ37( 25-APR-2017 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 14:48:03,812 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-KHAMBHALIYA - GJ37( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 14:49:07,062 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-KHAMBHALIYA - GJ37( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-26 14:50:10,580 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-KHAMBHALIYA - GJ37( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-26 14:51:41,991 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-KHAMBHALIYA - GJ37( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-26 14:52:37,433 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-KHEDA - GJ7( 17-MAR-2017 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 14:52:58,669 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-KHEDA - GJ7( 17-MAR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 14:54:02,196 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-KHEDA - GJ7( 17-MAR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-26 14:55:05,679 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-KHEDA - GJ7( 17-MAR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-26 14:56:37,081 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-KHEDA - GJ7( 17-MAR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-26 14:57:32,259 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-LUNAVADA - GJ35( 25-APR-2017 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 14:57:53,460 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-LUNAVADA - GJ35( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 14:58:56,852 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-LUNAVADA - GJ35( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-26 15:00:00,201 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-LUNAVADA - GJ35( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-26 15:01:31,804 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-LUNAVADA - GJ35( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-26 15:15:54,707 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-NARMADA - GJ22( 25-APR-2017 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 15:16:15,878 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-NARMADA - GJ22( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 15:17:19,695 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-NARMADA - GJ22( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-26 15:18:32,310 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-NARMADA - GJ22( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-26 15:20:05,265 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-NARMADA - GJ22( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-26 15:21:01,005 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-NAVSARI - GJ21( 25-APR-2017 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 15:21:22,181 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-NAVSARI - GJ21( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 15:22:25,718 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-NAVSARI - GJ21( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-26 15:23:29,043 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-NAVSARI - GJ21( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-26 15:25:00,732 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-NAVSARI - GJ21( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-26 15:25:56,201 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PANCHMAHAL - GJ17( 16-MAY-2017 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 15:26:17,450 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PANCHMAHAL - GJ17( 16-MAY-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 15:27:20,990 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PANCHMAHAL - GJ17( 16-MAY-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-26 15:28:24,545 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PANCHMAHAL - GJ17( 16-MAY-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-26 15:29:56,268 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PANCHMAHAL - GJ17( 16-MAY-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-26 15:30:51,652 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PATAN - GJ24( 21-MAR-2017 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 15:31:12,918 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PATAN - GJ24( 21-MAR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 15:32:16,341 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PATAN - GJ24( 21-MAR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-26 15:33:19,721 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PATAN - GJ24( 21-MAR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-26 15:34:51,515 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PATAN - GJ24( 21-MAR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-26 15:35:46,857 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PORBANDAR - GJ25( 25-APR-2017 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 15:36:08,001 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PORBANDAR - GJ25( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 15:37:11,609 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PORBANDAR - GJ25( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-26 15:38:15,104 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PORBANDAR - GJ25( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-26 15:39:46,727 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-PORBANDAR - GJ25( 25-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-26 15:40:42,427 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-RAJKOT - GJ3( 13-JUL-2017 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 15:41:03,667 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-RAJKOT - GJ3( 13-JUL-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 15:42:07,179 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-RAJKOT - GJ3( 13-JUL-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-26 15:43:11,263 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-RAJKOT - GJ3( 13-JUL-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-26 15:44:43,209 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-RAJKOT - GJ3( 13-JUL-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-26 15:45:38,626 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-SABARKANTHA - GJ9( 09-MAY-2017 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-26 15:45:59,781 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-SABARKANTHA - GJ9( 09-MAY-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-26 15:47:03,155 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-SABARKANTHA - GJ9( 09-MAY-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-26 15:48:06,552 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-SABARKANTHA - GJ9( 09-MAY-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-26 15:49:38,244 - vahan_logger - ERROR - Error for state-Gujarat(37),rto-SABARKANTHA - GJ9( 09-MAY-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-27 13:20:12,927 - vahan_logger - ERROR - Error for state-Haryana(179),rto-RTA CHARKI DADRI -HR84( 01-APR-2017 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-27 13:20:34,153 - vahan_logger - ERROR - Error for state-Haryana(179),rto-RTA CHARKI DADRI - HR84( 01-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-27 13:21:37,832 - vahan_logger - ERROR - Error for state-Haryana(179),rto-RTA CHARKI DADRI - HR84( 01-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-27 13:22:41,256 - vahan_logger - ERROR - Error for state-Haryana(179),rto-RTA CHARKI DADRI - HR84( 01-APR-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-27 18:19:06,869 - vahan_logger - ERROR - Error for state-Tamil Nadu(146),rto-VELLORE RTO - TN23( 05-JUL-2018 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-27 18:19:28,147 - vahan_logger - ERROR - Error for state-Tamil Nadu(146),rto-VELLORE RTO - TN23( 05-JUL-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-28 13:03:09,751 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-Azamgarh RTO - UP50( 26-FEB-2018 ),model-THREE WHEELER (GOODS),fuel_type-ELECTRIC(BOV)
+2023-04-28 16:04:08,402 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-,model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-28 16:04:29,648 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-28 16:05:37,659 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-28 16:06:45,306 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-28 16:08:26,147 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-,model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-28 16:24:42,047 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-Maharajganj - UP56( 18-SEP-2017 ),model-THREE WHEELER (GOODS),fuel_type-DIESEL
+2023-04-28 16:41:01,944 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-Maharajganj - UP56( 18-SEP-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-29 10:59:53,874 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-VARANASI RTO - UP65( 17-JAN-2018 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-29 11:00:15,087 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-VARANASI RTO - UP65( 17-JAN-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-04-29 11:00:36,359 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-VARANASI RTO - UP65( 17-JAN-2018 ),model-THREE WHEELER (PERSONAL),fuel_type-CNG ONLY
+2023-04-29 11:01:25,913 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-VARANASI RTO - UP65( 17-JAN-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-04-29 11:01:47,121 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-VARANASI RTO - UP65( 17-JAN-2018 ),model-THREE WHEELER (PERSONAL),fuel_type-DIESEL
+2023-04-29 11:02:26,837 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-VARANASI RTO - UP65( 17-JAN-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-04-29 11:02:48,062 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-VARANASI RTO - UP65( 17-JAN-2018 ),model-THREE WHEELER (PERSONAL),fuel_type-ELECTRIC(BOV)
+2023-04-29 11:04:05,554 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-VARANASI RTO - UP65( 17-JAN-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-04-29 11:04:26,745 - vahan_logger - ERROR - Error for state-Uttar Pradesh(78),rto-VARANASI RTO - UP65( 17-JAN-2018 ),model-THREE WHEELER (PERSONAL),fuel_type-PETROL
+2023-04-29 13:52:22,684 - vahan_logger - ERROR - Error for state-Jharkhand(30),rto-HAZARIBAG - JH2( 19-JAN-2017 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-04-29 13:52:43,862 - vahan_logger - ERROR - Error for state-Jharkhand(30),rto-HAZARIBAG - JH2( 19-JAN-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-01 11:02:39,312 - vahan_logger - ERROR - Error for state-Kerala(87),rto-PATHANAPURAM SRTO - KL80( 28-SEP-2020 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-01 11:08:20,202 - vahan_logger - ERROR - Error for state-Kerala(87),rto-PATTAMBI SRTO - KL52( 30-MAR-2019 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-05-01 11:09:26,867 - vahan_logger - ERROR - Error for state-Kerala(87),rto-PATTAMBI SRTO - KL52( 30-MAR-2019 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-05-01 11:11:02,084 - vahan_logger - ERROR - Error for state-Kerala(87),rto-PATTAMBI SRTO - KL52( 30-MAR-2019 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-05-01 11:12:03,060 - vahan_logger - ERROR - Error for state-Kerala(87),rto-PAYYANNUR SRTO - KL86( 28-SEP-2020 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY
+2023-05-01 16:33:30,652 - vahan_logger - ERROR - Error for state-Manipur(12),rto-BISHNUPUR - MN5( 27-AUG-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-01 16:34:34,417 - vahan_logger - ERROR - Error for state-Manipur(12),rto-BISHNUPUR - MN5( 27-AUG-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-05-01 16:35:37,757 - vahan_logger - ERROR - Error for state-Manipur(12),rto-BISHNUPUR - MN5( 27-AUG-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-05-01 16:37:09,515 - vahan_logger - ERROR - Error for state-Manipur(12),rto-BISHNUPUR - MN5( 27-AUG-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-05-01 16:41:59,496 - vahan_logger - ERROR - Error for state-Manipur(12),rto-CHURACHANDPUR - MN2( 11-APR-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-01 16:43:02,982 - vahan_logger - ERROR - Error for state-Manipur(12),rto-CHURACHANDPUR - MN2( 11-APR-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-05-01 16:44:06,302 - vahan_logger - ERROR - Error for state-Manipur(12),rto-CHURACHANDPUR - MN2( 11-APR-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-05-01 16:45:37,796 - vahan_logger - ERROR - Error for state-Manipur(12),rto-CHURACHANDPUR - MN2( 11-APR-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-05-01 16:50:27,808 - vahan_logger - ERROR - Error for state-Manipur(12),rto-IMPHAL EAST - MN6( 26-SEP-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-01 16:51:31,223 - vahan_logger - ERROR - Error for state-Manipur(12),rto-IMPHAL EAST - MN6( 26-SEP-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-05-01 16:52:34,751 - vahan_logger - ERROR - Error for state-Manipur(12),rto-IMPHAL EAST - MN6( 26-SEP-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-05-01 16:54:06,332 - vahan_logger - ERROR - Error for state-Manipur(12),rto-IMPHAL EAST - MN6( 26-SEP-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-05-01 16:55:15,711 - vahan_logger - ERROR - Error for state-Manipur(12),rto-IMPHAL WEST - MN1( 09-MAY-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-01 16:56:19,069 - vahan_logger - ERROR - Error for state-Manipur(12),rto-IMPHAL WEST - MN1( 09-MAY-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-05-01 16:57:22,545 - vahan_logger - ERROR - Error for state-Manipur(12),rto-IMPHAL WEST - MN1( 09-MAY-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-05-01 16:58:54,032 - vahan_logger - ERROR - Error for state-Manipur(12),rto-IMPHAL WEST - MN1( 09-MAY-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-05-01 17:00:03,657 - vahan_logger - ERROR - Error for state-Manipur(12),rto-KANGPOKPI - MN3( 20-AUG-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-01 17:01:07,009 - vahan_logger - ERROR - Error for state-Manipur(12),rto-KANGPOKPI - MN3( 20-AUG-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-05-01 17:02:10,450 - vahan_logger - ERROR - Error for state-Manipur(12),rto-KANGPOKPI - MN3( 20-AUG-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-05-01 17:03:42,167 - vahan_logger - ERROR - Error for state-Manipur(12),rto-KANGPOKPI - MN3( 20-AUG-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-05-01 17:15:53,682 - vahan_logger - ERROR - Error for state-Manipur(12),rto-THOUBAL - MN4( 20-SEP-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-01 17:16:57,324 - vahan_logger - ERROR - Error for state-Manipur(12),rto-THOUBAL - MN4( 20-SEP-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-05-01 17:18:00,774 - vahan_logger - ERROR - Error for state-Manipur(12),rto-THOUBAL - MN4( 20-SEP-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-05-01 17:19:32,400 - vahan_logger - ERROR - Error for state-Manipur(12),rto-THOUBAL - MN4( 20-SEP-2018 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-05-01 17:28:21,688 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-ALIRAJPUR DTO - MP69( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-01 17:29:25,214 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-ALIRAJPUR DTO - MP69( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-05-01 17:30:28,710 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-ALIRAJPUR DTO - MP69( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-05-01 17:32:00,344 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-ALIRAJPUR DTO - MP69( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-05-01 17:33:09,878 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-ANUPPUR DTO - MP65( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-01 17:34:13,303 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-ANUPPUR DTO - MP65( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-05-01 17:35:16,715 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-ANUPPUR DTO - MP65( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-05-01 17:36:48,273 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-ANUPPUR DTO - MP65( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-05-01 17:37:57,755 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-ASHOKNAGAR DTO - MP67( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-01 17:39:01,339 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-ASHOKNAGAR DTO - MP67( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-05-01 17:40:04,764 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-ASHOKNAGAR DTO - MP67( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-05-01 17:41:36,539 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-ASHOKNAGAR DTO - MP67( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-PETROL
+2023-05-01 18:03:19,401 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-TIKAMGARH DTO - MP36( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-01 18:04:23,003 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-TIKAMGARH DTO - MP36( 23-JUL-2022 ),model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-05-01 18:12:22,549 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-,model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-01 18:13:25,936 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-,model-THREE WHEELER (PASSENGER),fuel_type-DIESEL
+2023-05-01 18:14:29,359 - vahan_logger - ERROR - Error for state-Madhya Pradesh(52),rto-,model-THREE WHEELER (PASSENGER),fuel_type-ELECTRIC(BOV)
+2023-05-02 13:32:24,748 - vahan_logger - ERROR - Error for state-Punjab(93),rto-SANGRUR RTA - PB13( 13-NOV-2017 ),model-THREE WHEELER (PASSENGER),fuel_type-CNG ONLY
+2023-05-06 10:40:17,334 - vahan_logger - ERROR - Error for state-Andhra Pradesh(80),rto-Tirupati RTA - AP103( 25-APR-2022 ),model-THREE WHEELER (GOODS),fuel_type-CNG ONLY

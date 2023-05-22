@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Our Company</title>
+</head>
+
+<body>
+
+  <h1>Welcome to Our Company</h1>
+  <h2>Web Site Main Ingredients:</h2>
+<p>User Names</p>
+  {% for obj in hello %}
+
+    {{obj.name}}
+  <br>
+  {%endfor%}
+
+  {% if score >= 90 %}
+  <p>You did well in exam.</p>
+  {% elif score < 50 %}
+  <p>You need to improve more.</p>
+  {%endif%}
+
+  Your scored is {{score}}/100.
+</body>
+</html>

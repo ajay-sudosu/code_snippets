@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ajay">
+        <meta name="description" content="Contact information for The Little Taco Shop">
+        <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <title>Contact Us - LTS</title>
+    </head>
+    <body>
+        <header>
+            <h1>Contact Us</h1>
+            <nav aria-labelledby="primary-nav">
+                <h2 id="primary-nav"></h2>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#about">About LTS</a>
+                    </li>
+                    <li>
+                        <a href="index.html#menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="hours.html">Store Hours</a>
+                    </li>
+                </ul>
+                <figure>
+                    <img src="images/pictures/tacos_shop.jpg" alt="taco" title="The Little Taco Shop" loading="lazy" height="250" width="350">
+                    <figcaption>Little Taco Shop Tacos</figcaption>
+                </figure>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <article id="contact">
+                <h2>Contact Form</h2>
+                <form method="post" action="https://httpbin.org/post">
+                    <fieldset>
+                        <legend>Send Us a Message</legend>
+                        <p>
+                            <label for="name">Name: </label>
+                            <input id="name" name="name" placeholder="Name" type="text" required>
+                        </p>
+                        <p>
+                            <label for="email">Email: </label>
+                            <input id="email" name="email" placeholder="Email" type="email" required>
+                        </p>
+                        <p>
+                            <label for="message">Message: </label>
+                        </p>
+                        <textarea id="message" name="message" placeholder="Enter your email" cols="30" rows="10"></textarea>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </article>
+            <article id="location">
+                <h2>Our Location</h2>
+                <address> 111- Taco Temptation Place,Dehradun <br>
+                    <br>
+                    <a href="tel:">Phone: +919876543210</a>
+                </address>
+                <p>
+                    <a href="#">Back to top</a>
+                </p>
+            </article>
+        </main>
+        <hr>
+        <footer>
+            <p>Copyright &copy;The Little Taco Shop</p>
+        </footer>
+    </body>
+</html>

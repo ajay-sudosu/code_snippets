@@ -1,0 +1,12 @@
+level=logging.DEBUG/WARNING/INFO all these are level integers which are already set.
+DEBUG = 10
+INFO = 20
+WARNING = 30
+
+
+In case of imports once the root logger is set it cannot be overide by other loggers.
+example:
+imort xyx_module
+Now the logger set in xyx_module will be set as root logger.
+
+StreamHandler -> If we want to see logs on console.

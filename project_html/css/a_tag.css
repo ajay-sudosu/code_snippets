@@ -1,0 +1,9 @@
+a {
+     color: lime;
+     }
+     a:visited {
+     color: yellow;
+     }
+     a:hover, a:active {
+     color: white;
+      }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   {% load static %}
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+      <title>Dleohr - Bootstrap Admin HTML Template</title>
+      <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/fontawesome.min.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/all.min.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/jquery.toast.css' %}">
+      <!--[if lt IE 9]>
+      <script src="{% static 'assets/js/html5shiv.min.js' %}"></script>
+      <script src="{% static 'assets/js/respond.min.js' %}"></script>
+      <![endif]-->
+      <style>
+         .btn-block {
+         display: flex!important;
+         width: 25%!important;
+         justify-content: center!important;
+         margin: 0 auto!important;
+         height: 37px!important;
+         }
+         .btn-primary {
+         background-color: #8dc43d;
+         border: 1px solid #8dc43d;
+         padding: 5px 0;
+         }
+      </style>
+   </head>
+   <body>
+      {% block content %}
+      {% endblock %}
+      <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+      <script src="{% static 'assets/js/popper.min.js' %}"></script>
+      <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'assets/js/jquery.toast.js' %}"></script>
+      <script src="{% static 'assets/js/feather.min.js' %}"></script>
+      <script src="{% static 'assets/plugins/slimscroll/jquery.slimscroll.min.js' %}"></script>
+      <script src="{% static 'assets/js/script.js' %}"></script>
+   </body>
+</html>

@@ -1,0 +1,15 @@
+env
+.idea
+venv
+leaves/__pycache__/
+leaves/migrations/
+user_management/migrations/
+user_management/__pycache__/
+zestgeek_hrm/__pycache__/
+zestgeek_hrm/migrations/
+inventory/__pycache__/
+inventory/migrations/
+db.sqlite3
+zestgeek_hrm/__pycache__/settings.cpython-37.pyc
+__pychache__/
+__pycache__

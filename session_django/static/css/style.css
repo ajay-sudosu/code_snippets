@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_image{
+ widht: 300px;
+ height: 500px;
+}
+
+.related_image{
+ widht: 180px;
+ height: 100px;
+ }

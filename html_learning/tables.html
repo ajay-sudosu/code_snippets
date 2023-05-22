@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ajay Singh">
+    <meta name="description" content="Things I will learn.">
+    <title>Hello World</title>
+    <link rel="icon" href="images/html5.svg" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>Links examples.</h1>
+      <nav aria-labelledby="primary-navigation">
+        <h2 id="primary-navigation">PN</h2>
+        <p>Go to a particular section</p>
+        <ul>
+          <li>
+            <a href="#ordered">Go to ordered list section</a>
+          </li>
+          <li>
+            <a href="#unordered">Go to unordered list section</a>
+          </li>
+          <li>
+            <a href="#dl">Go to description list section</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+    <main>
+      <article id="'html">
+        <h2>I am learning html</h2>
+        <p>This is my first web page.</p>
+        <figure>
+          <img src="images/logo.svg" title="This is html logo" alt="Html logo" width="200" height="100">
+          <figcaption>Figure:HTML5 logo</figcaption>
+        </figure>
+      </article>
+      <hr>
+      <h2>Learning Abbreviations.</h2>
+      <p> This is <abbr title="Mozilla developer network">
+          <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+        </abbr>. </p>
+      <hr>
+      <article id="lists">
+        <h3>Learning lists from here.</h3>
+        <p>Places to visit.</p>
+        <section id="ordered">
+          <h4>Ordered Section</h4>
+          <ol>
+            <li>Gulmarg <figure>
+                <img src="images/gulmarg.jpg" alt="gulmarg" title="This is gulmarg" height="150" width="200" loading="lazy">
+                <figcaption>Fig 1.Gulmarg</figcaption>
+              </figure>
+            </li>
+            <li>Shimla <figure>
+                <img src="images/shimla.jpg" alt="gulmarg" title="This is shimla" height="150" width="200" loading="lazy">
+                <figcaption>Fig 2.Shimla</figcaption>
+              </figure>
+            </li>
+            <li>Goa <figure>
+                <img src="images/goa.jpg" alt="goa" title="This is goa" height="150" width="200" loading="lazy">
+                <figcaption>Fig 3.Goa</figcaption>
+              </figure>
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>Guess the <mark>number of hours</mark> I code per day </summary>
+              <p>I start at <time datetime="08:00">8 am</time> and code for <time datetime="PT3H">3 hrs</time> every day. </p>
+            </details>
+          </aside>
+          <br>
+          <hr>
+          <table>
+            <caption>My daily schedule</caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Timing</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8 am</time> - <time datetime="11:00">11 am</time>
+                </td>
+                <td>Do coding</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="12:00">12 am</time> - <time datetime="01:00">1 pm</time>
+                </td>
+                <td>Eat lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="02:00">2 pm</time> - <time datetime="03:00">03 pm</time>
+                </td>
+                <td>Study other courses</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All other time</td>
+                <td>Free time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">That's what I do 5 days a week.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+        <hr>
+        <section id="unordered">
+          <h4>Unordered Section</h4>
+          <p>Places to avoid.</p>
+          <ul>
+            <li>France</li>
+            <li>Italy</li>
+            <li>US</li>
+            <li>
+              <p>Something is not good about this place:</p>
+              <address>Falcon Street, Dehradun</address>
+            </li>
+          </ul>
+          <p>Confused right? I know.</p>
+          <br>
+        </section>
+        <hr>
+        <section id="dl">
+          <h4>Description list</h4>
+          <dl>
+            <dt>North Pole</dt>
+            <dd>Test_1</dd>
+            <dt>South Pole</dt>
+            <dd>Test_2</dd>
+          </dl>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <hr> &lt;&lt;&lt; &copy; Author: <a href="about.html" target="_blank">Ajay Singh </a>&gt;&gt;&gt; <p>
+        <a href="#">Back to top</a>
+        <br>
+        <a href="html5.svg" download="html_logo">Download this html image.</a>
+      </p>
+    </footer>
+  </body>
+</html>

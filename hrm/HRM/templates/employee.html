@@ -1,0 +1,534 @@
+{% extends 'base.html' %} {% load static %} {% block content %} {% if messages %}
+<ul class="messages">
+   {% for message in messages %} {% if message.tags == 'success' %} <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="{% static 'assets/js/jquery.toast.js' %}"></script>
+   <script>
+      var myToast = $.toast({
+        heading: 'Success',
+        text: '{{message}}',
+        showHideTransition: 'slide',
+        icon: 'success',
+        position: 'top-right'
+      })
+   </script> {% else %} <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="{% static 'assets/js/jquery.toast.js' %}"></script>
+   <script>
+      var myToast = $.toast({
+        heading: 'Error',
+        text: '{{message}}',
+        showHideTransition: 'slide',
+        icon: 'error',
+        position: 'top-right'
+      })
+   </script> {% endif %} {% endfor %}
+</ul>
+{% endif %}
+<div class="page-wrapper">
+   <div class="content container-fluid">
+      <div class="row">
+         <div class="col-xl-12 col-sm-12 col-12">
+            <div class="breadcrumb-path mb-4">
+               <ul class="breadcrumb">
+                  <li class="breadcrumb-item">
+                     <a href="/home">
+                     <img src="{% static 'assets/img/dash.png' %}" class="mr-2" alt="breadcrumb" />Home </a>
+                  </li>
+                  <li class="breadcrumb-item active"> Employees</li>
+               </ul>
+            </div>
+         </div>
+         <div class="col-xl-12 col-sm-12 col-12 mb-4">
+            <div class="head-link-set">
+               <ul>
+                  <li>
+                     <a class="active" href="/employee">All</a>
+                  </li>
+                  <li>
+                     <a href="/department">Departments</a>
+                  </li>
+                  <!--<li><a href="employee-office.html">Offices</a></li>-->
+               </ul>
+               {% if request.user.is_admin or request.user.is_superuser %} <a class="btn-add " data-toggle="modal" data-target="#addteam">
+               <i data-feather="plus"></i>Add Employee </a> {% endif %}
+            </div>
+         </div>
+         <div class="col-xl-12 col-sm-12 col-12 mb-4">
+            <div class="row">
+               <div class="col-xl-12 col-sm-12 col-12 ">
+                  <label class="employee_count">Total Employees - {{total_employee}}
+                  </label>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-12 col-sm-12 col-12 mb-4">
+            <div class="card">
+               <div class="table-heading">
+                  <h5>Employee's Details</h5>
+               </div>
+               <div class="table-responsive">
+                  <table class="table  custom-table no-footer">
+                     <thead>
+                        <tr>
+                           <th>Image</th>
+                           <th>Name</th>
+                           <th>Email</th>
+                           <th>Designation</th>
+                           <th>Department</th>
+                           <th>Phone Number</th>
+                           <th>Inventory</th>
+                           {% if request.user.is_admin or request.user.is_superuser %}
+                           <th class="text-center">Edit</th>
+                           <th>Delete</th>
+                           {% endif %}
+                        </tr>
+                     </thead>
+                     <tbody>
+                        {% for i in user %}
+                        <tr>
+                           <td>
+                              <div class="table-img">
+                                 <img src="{{i.image.url}}" alt="profile" class="img-table" />
+                              </div>
+                           </td>
+                           <td>
+                              <label class="action_lab">{{i.first_name}} {{i.last_name}} </label>
+                           </td>
+                           <td>
+                              <label class="action_labe">{{i.email}} </label>
+                           </td>
+                           <td>
+                              <label>{{i.role}} </label>
+                           </td>
+                           <td>
+                              <label>{{i.department}}</label>
+                           </td>
+                           <td class="tab-select">
+                              <label>{{i.phone_number}}</label>
+                           </td>
+                           <td>
+                              <a href="{% url 'inventory' i.id %}">Inventory</a>
+                           </td>
+                           {% if request.user.is_admin or request.user.is_superuser %}
+                           <td>
+                              <div class="change_edit_color">
+                                 <a href="#" id={{i.id}} class="edit_idd" data-toggle="modal" data-target="#addteam">Edit</a>
+                              </div>
+                              <!--                              <div class="btn btn-info change_link_color">-->
+                              <!--                                 <a href="#">Edit</a>-->
+                              <!--                              </div>-->
+                           </td>
+                           <td>
+                              <div class="change_delete_color">
+                                 <a href="" id={{i.id}} class="delete_employees" data-toggle="modal" data-target="#delete_modals">Delete</a>
+                              </div>
+                           </td>
+                           {% endif %}
+                        </tr>
+                        {%endfor%}
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+undefined</div>undefined
+<div class="customize_popup">
+   <div class="modal" tabindex="-1" id="delete_modals" aria-labelledby="staticBackdropLabela" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="staticBackdropLabela">Confirm Delete</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">×</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <div class=" col-md-12 p-0">
+                  <div class=" form-popup m-0">
+                     <p>Are you sure you want to delete this.?</p>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <a type="submit" class="btn btn-primary deleted">Delete</a>
+               <a type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
+            </div>
+            </form>
+         </div>
+      </div>
+      undefined
+   </div>
+   undefined
+</div>
+undefined
+<div class="customize_popup">
+   undefined
+   <div class="modal fade" id="addteam" tabindex="-1" aria-labelledby="staticBackdropLabela" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="staticBackdropLabela">Create New Employee</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">×</span>
+               </button>
+            </div>
+            <div class="modal-body" id="add-agent-modal">
+               {% if form.errors %} {% for field in form %} {% for error in field.errors %}
+               <p> {{ error }} </p>
+               {% endfor %} {% endfor %} {% endif %}
+               <form id="first_form" method="post" action="" enctype="multipart/form-data">
+                  {% csrf_token %}
+                  <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <label for="first_name" class="form-control-label">First Name</label>
+                        <input class="form-control" name="first_name" id="first_name" placeholder="Enter first name">
+                     </div>
+                     <div class="form-group col-md-6">
+                        <label for="last_name" class="form-control-label">Last Name</label>
+                        <input class="form-control" name="last_name" id="last_name" placeholder="Enter last name">
+                     </div>
+                  </div>
+                  <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <label for="email" class="form-control-label">Email Address</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+                     </div>
+                     <div class="form-group col-md-6">
+                        <label for="personal_email" class="form-control-label">Personal Email Address</label>
+                        <input type="email" class="form-control" name="personal_email" id="personal_email" placeholder="Enter personal email">
+                     </div>
+                  </div>
+                  <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <label for="gender" class="form-control-label">Select Gender</label>
+                        <select class="form-control" id="gender" name="gender">
+                           <option value="male">Male</option>
+                           <option value="female">Female</option>
+                           <option value="unspecified">Unspecified</option>
+                        </select>
+                     </div>
+                     <div class="form-group col-md-6">
+                        <label for="image" class="form-control-label">Profile Picture</label>
+                        <input type="file" class="form-control" name="image" id="image" placeholder="Select Image" src="imaege.png">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="temporary_address" class="form-control-label">Temporary Address</label>
+                     <textarea class="form-control" name="temporary_address" id="temporary_address" rows="1" placeholder="Enter temporary address"></textarea>
+                  </div>
+                  <div class="form-group">
+                     <label for="permanent_address" class="form-control-label">Permanent Address</label>
+                     <textarea class="form-control" rows="1" name="permanent_address" id="permanent_address" placeholder="Enter permanent address"></textarea>
+                  </div>
+                  <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <label for="phone_number" class="form-control-label">Phone Number</label>
+                        <input type="tel" class="form-control" name="phone_number" id="phone_number" placeholder="Enter phone number">
+                     </div>
+                     <div class="form-group col-md-6">
+                        <label for="alternate_phone_number" class="form-control-label">Alternate Phone Number</label>
+                        <input type="tel" class="form-control" name="alternate_phone_number" id="alternate_phone_number" placeholder="Enter alternate phone number">
+                     </div>
+                  </div>
+                  <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <label for="role" class="form-control-label">Desiganition</label>
+                        <!--<input class="form-control" name="role" placeholder="Select desiganition">-->
+                        <select id="role" name="role">
+                           {% for role in role%}
+                           <option value="{{role.role_name}}">{{role.role_name}}</option>
+                           {% endfor %}
+                        </select>
+                     </div>
+                     <div class="form-group col-md-6">
+                        <label for="department" class="form-control-label">Department</label>
+                        <!--<input class="form-control" name="department" placeholder="Select department">-->
+                        <select id="department" name="department" class="form-control">
+                           {% for dep in department%}
+                           <option value="{{dep.department_name}}">{{dep.department_name}}</option>
+                           {% endfor %}
+                        </select>
+                     </div>
+                  </div>
+                  <div class="form-row">
+                     <div class="form-group col-md-6">
+                        <label for="password" class="form-control-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+                     </div>
+                     <div class="form-group col-md-6">
+                        <label class="form-control-label">Confirm Password</label>
+                        <input class="form-control" type="password" id="confirm_password" name="confirm_password" placeholder="Enter confirm-password">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="joined_date" class="form-control-label">Joined Date</label>
+                     <input type="date" class="form-control" name="joined_date" id="joined_date" placeholder="Select joined date">
+                  </div>
+                  <!--<div class="modal-footer">-->
+                  <button type="submit" value="submit" class="btn btn-primary">Submit</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  <!--</div>-->
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<script>
+   $(document).on('click', '.delete_employees', function() {
+     get_id = $(this).attr('id')
+     $('.deleted').on('click', function() {
+       ne_id = $('.deleted').attr('id', get_id)
+       console.log(ne_id, "----=====")
+       delete_id = $('.deleted').attr('id')
+       var url = "delete_employee/" + delete_id
+       $.ajax({
+         type: "GET",
+         data: {
+           id: delete_id
+         },
+         url: url,
+         success: (data) => {
+           console.log(data);
+           console.log(data.message);
+           window.location.replace("/employee");
+         },
+         error: (error) => {
+           console.log(error);
+         }
+       });
+     });
+   });
+   $(document).on('click', '.edit_idd', function() {
+     value = $(this).attr('id');
+     console.log(value)
+     var url = "update_employee/" + value
+     $.ajax({
+       type: "GET",
+       data: {
+         id: value
+       },
+       url: url,
+       success: (data) => {
+         console.log(data);
+         console.log(data.email);
+         openModal(data);
+       },
+       error: (error) => {
+         console.log(error);
+       }
+     });
+   });
+
+   function openModal(product_data) {
+     $('#first_name').val(product_data.first_name);
+     $('#last_name').val(product_data.last_name);
+     $('#email').val(product_data.email);
+     $('#role').val(product_data.role);
+     $('#gender').val(product_data.gender);
+     $('#personal_email').val(product_data.personal_email);
+     $('#image').text(product_data.image);
+     $('#temporary_address').val(product_data.temporary_address);
+     $('#permanent_address').val(product_data.permanent_address);
+     $('#phone_number').val(product_data.phone_number);
+     $('#alternate_phone_number').val(product_data.alternate_phone_number);
+     $('#department').val(product_data.department);
+     $('#joined_date').val(product_data.joined_date);
+     $('#first_form').modal('show');
+   };
+   jQuery(document).ready(function() {
+         formdata = new FormData();
+         $("#image").on("change", function() {
+           var file = this.files[0];
+           formdata.append("image", file)
+         })
+         $('#first_form').submit(function(e) {
+               e.preventDefault();
+               var first_name = $('#first_name').val();
+               var last_name = $('#last_name').val();
+               var email = $('#email').val();
+               var password = $('#password').val();
+               var confirm_password = $('#confirm_password').val();
+               var personal_email = $('#personal_email').val();
+               var phone_number = $('#phone_number').val();
+               var alternate_phone_number = $('#alternate_phone_number').val();
+               var joined_date = $('#joined_date').val();
+               var department = $('#department').val();
+               var role = $('#role').val();
+               var permanent_address = $('#permanent_address').val();
+               var temporary_address = $('#temporary_address').val();
+               var gender = $('#gender').val();
+               var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+               formdata.append("first_name", first_name)
+               formdata.append("last_name", last_name)
+               formdata.append("email", email)
+               formdata.append("personal_email", personal_email)
+               formdata.append("gender", gender)
+               formdata.append("permanent_address", permanent_address)
+               formdata.append("temporary_address", temporary_address)
+               formdata.append("role", role)
+               formdata.append("department", department)
+               formdata.append("joined_date", joined_date)
+               formdata.append("alternate_phone_number", alternate_phone_number)
+               formdata.append("phone_number", phone_number)
+               formdata.append("confirm_password", confirm_password)
+               formdata.append("password", password)
+               var err = false;
+               if (first_name.length < 1) {
+                 $('#first_name').after(' < span class = "error" > This field is required < /span>');
+                   err = true
+                 }
+                 if (last_name.length < 1) {
+                   $('#last_name').after(' < span class = "error" > This field is required < /span>');
+                     err = true
+                   }
+                   if (password.length < 8) {
+                     $('#password').after(' < span class = "error" > Password must be at least 8 characters long < /span>');
+                       err = true
+                     }
+                     if (personal_email.length < 1) {
+                       $('#personal_email').after(' < span class = "error" > This field is required < /span>');
+                         err = true
+                       }
+                       if (phone_number.length < 1) {
+                         $('#phone_number').after(' < span class = "error" > This field is required < /span>');
+                           err = true
+                         }
+                         if (alternate_phone_number.length < 1) {
+                           $('#alternate_phone_number').after(' < span class = "error" > This field is required < /span>');
+                             err = true
+                           }
+                           if (email.length < 1) {
+                             $('#email').after(' < span class = "error" > This field is required < /span>');
+                               err = true
+                             }
+                             url = "/employee"
+                             $.ajax({
+                                 type: "POST",
+                                 data: formdata,
+                                 dataType: "json",
+                                 url: url,
+                                 processData: false,
+                                 contentType: false,
+                                 beforeSend: function(xhr) {
+                                   xhr.setRequestHeader('X-CSRFToken', csrftoken);
+                                 },
+                                 success: (data) => {
+                                   console.log(data.message);
+                                   if (data.message == 'Email already exists') {
+                                     $('#email').after(' < span class = "error" > '+data.message+' < /span>');
+                                     }
+                                     else if (data.message == "Password doesn't not matched") {
+                                       $('#password').after(' < span class = "error" > '+data.message+' < /span>');
+                                       }
+                                       else if (data.message == "Personal email already exists") {
+                                         $('#personal_email').after(' < span class = "error" > '+data.message+' < /span>');
+                                         }
+                                         else if (data.message == "Employee created successfully") {
+                                           window.location.replace("/employee");
+                                         } else {
+                                           e.preventDefault();
+                                         }
+                                       },
+                                       error: (error) => {
+                                         console.log(error);
+                                         e.preventDefault();
+                                       }
+                                     });
+                                 })
+                             });
+                           $(document).on('click', 'a', function() {
+                                 id = $(this).attr('id');
+                                 console.log(id)
+                                 $("#image").on("change", function() {
+                                   var file = this.files[0];
+                                   formdata.append("image", file)
+                                 })
+                                 $('#first_form').submit(function(e) {
+                                       e.preventDefault();
+                                       var first_name = $('#first_name').val();
+                                       var last_name = $('#last_name').val();
+                                       var email = $('#email').val();
+                                       var personal_email = $('#personal_email').val();
+                                       var phone_number = $('#phone_number').val();
+                                       var alternate_phone_number = $('#alternate_phone_number').val();
+                                       var joined_date = $('#joined_date').val();
+                                       var department = $('#department').val();
+                                       var role = $('#role').val();
+                                       var permanent_address = $('#permanent_address').val();
+                                       var temporary_address = $('#temporary_address').val();
+                                       var gender = $('#gender').val();
+                                       var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+                                       formdata.append("first_name", first_name)
+                                       formdata.append("last_name", last_name)
+                                       formdata.append("email", email)
+                                       formdata.append("personal_email", personal_email)
+                                       formdata.append("gender", gender)
+                                       formdata.append("permanent_address", permanent_address)
+                                       formdata.append("temporary_address", temporary_address)
+                                       formdata.append("role", role)
+                                       formdata.append("department", department)
+                                       formdata.append("joined_date", joined_date)
+                                       formdata.append("alternate_phone_number", alternate_phone_number)
+                                       formdata.append("phone_number", phone_number)
+                                       if (id) {
+                                         formdata.append("id", id)
+                                       }
+                                       $(".error").remove();
+                                       var err = false;
+                                       if (first_name.length < 1) {
+                                         $('#first_name').after(' < span class = "error" > This field is required < /span>');
+                                           err = true
+                                         }
+                                         if (last_name.length < 1) {
+                                           $('#last_name').after(' < span class = "error" > This field is required < /span>');
+                                             err = true
+                                           }
+                                           if (personal_email.length < 1) {
+                                             $('#personal_email').after(' < span class = "error" > This field is required < /span>');
+                                               err = true
+                                             }
+                                             if (phone_number.length < 1) {
+                                               $('#phone_number').after(' < span class = "error" > This field is required < /span>');
+                                                 err = true
+                                               }
+                                               if (alternate_phone_number.length < 1) {
+                                                 $('#alternate_phone_number').after(' < span class = "error" > This field is required < /span>');
+                                                   err = true
+                                                 }
+                                                 if (email.length < 1) {
+                                                   $('#email').after(' < span class = "error" > This field is required < /span>');
+                                                     err = true
+                                                   }
+                                                   url = "/update_employee/" + id
+                                                   $.ajax({
+                                                     type: "POST",
+                                                     data: formdata,
+                                                     dataType: "json",
+                                                     url: url,
+                                                     processData: false,
+                                                     contentType: false,
+                                                     beforeSend: function(xhr) {
+                                                       xhr.setRequestHeader('X-CSRFToken', csrftoken);
+                                                     },
+                                                     success: (data) => {
+                                                       console.log(data);
+                                                       if (data == 'Email already exists') {
+                                                         $('#email').after(' < span class = "error" > '+data+' < /span>');
+                                                         }
+                                                         else if (data == "Password doesn't not matched") {
+                                                           $('#password').after(' < span class = "error" > '+data+' < /span>');
+                                                           }
+                                                           else {
+                                                             window.location.replace("/employee");
+                                                           }
+                                                         },
+                                                         error: (error) => {
+                                                           console.log(error);
+                                                         }
+                                                       });
+                                                   });
+                                                 });
+</script> {% endblock %}

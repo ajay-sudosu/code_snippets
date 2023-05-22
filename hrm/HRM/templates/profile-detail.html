@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+   <div class="page-wrapper">
+      <div class="content container-fluid">
+         <div class="row">
+            <div class="col-xl-12 col-sm-12 col-12 ">
+               <div class="breadcrumb-path mb-4">
+                  <ul class="breadcrumb">
+                     <li class="breadcrumb-item"><a href="/home"><img src="{% static 'assets/img/dash.png' %}" class="mr-2" alt="breadcrumb" />Home</a></li>
+                     <li class="breadcrumb-item active"> Profile</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-xl-12 col-sm-12 col-12 mb-4">
+               <div class="head-link-set">
+                  <ul>
+                     <li><a href="">All</a></li>
+                     <li><a class="active" href="#">Detail</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-xl-12 col-sm-12 col-12">
+               <div class="row">
+                  <div class="col-xl-8 col-sm-12 col-12 d-flex">
+                     <div class="card card-lists flex-fill">
+                        <div class="card-header">
+                           <h2 class="card-titles p-3">Basic Information</h2>
+                        </div>
+                        <div class="card-body">
+                           <table class="table table-striped">
+                              <tbody>
+                                 <tr>
+                                    <th>First Name</th>
+                                    <td>{{show_data.first_name}}</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Last Name</th>
+                                    <td>{{show_data.last_name}}</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Email</th>
+                                    <td>{{show_data.email}}</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Role</th>
+                                    <td>{{show_data.role}}</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Department</th>
+                                    <td>{{show_data.department}}</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Phone Number</th>
+                                    <td>{{show_data.phone_number}}</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Personal Email</th>
+                                    <td>{{show_data.personal_email}}</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Gender</th>
+                                    <td>{{show_data.gender}}</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Temporary Address</th>
+                                    <td style="white-space: normal;">{{show_data.temporary_address}}</td>
+                                 </tr>
+                                 <tr>
+                                    <th class="address">Permanent Address</th>
+                                    <td style="white-space: normal;">{{show_data.permanent_address}}</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Alternate Phone Number</th>
+                                    <td>{{show_data.alternate_phone_number}}</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Joined Date</th>
+                                    <td>{{show_data.joined_date}}</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock %}

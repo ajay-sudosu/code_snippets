@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% if messages %}
+      <ul class="messages">
+          {% for message in messages %}
+          {% if message.tags == 'success' %}
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <script src="{% static 'assets/js/jquery.toast.js' %}"></script>
+            <script>
+               var myToast =$.toast({
+                  heading: 'Success',
+                  text: '{{message}}',
+                  showHideTransition: 'slide',
+                  icon: 'success',
+                  position:'top-right'
+               })
+            </script>
+          {% else %}
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <script src="{% static 'assets/js/jquery.toast.js' %}"></script>
+            <script>
+               var myToast =$.toast({
+                  heading: 'Error',
+                  text: '{{message}}',
+                  showHideTransition: 'slide',
+                  icon: 'error',
+                  position:'top-right'
+               })
+            </script>
+          {% endif %}
+          {% endfor %}
+      </ul>
+      {% endif %}
+   <div class="page-wrapper">
+      <div class="content container-fluid">
+         <form method="post" action="">
+            {% csrf_token %}
+<!--            {% if messages %}-->
+<!--            <ul class="messages">-->
+<!--               {% for message in messages %}-->
+<!--               <p  style="color:red" {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </p>-->
+<!--               {% endfor %}-->
+<!--            </ul>-->
+<!--            {% endif %}-->
+            <div class="row">
+               <div class="col-xl-12 col-sm-12 col-12 ">
+                  <div class="breadcrumb-path mb-4">
+                     <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+                        <li class="breadcrumb-item active"> Inventory</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-xl-12 col-sm-12 col-12 ">
+                  <div class="card">
+                     <div class="card-header">
+                        <h2 class="card-titles">Employee Basic Details</h2>
+                     </div>
+                     <div class="card-body">
+                        <div class="row">
+                           <div class="col-xl-6 col-sm-12 col-12 ">
+                              <div class="form-group">
+                                 <input type="text" placeholder="First Name" value="{{employee.first_name}}" readonly>
+                              </div>
+                           </div>
+                           <div class="col-xl-6 col-sm-12 col-12 ">
+                              <div class="form-group">
+                                 <input type="text" placeholder="Last Name" value="{{employee.last_name}} " readonly>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-xl-6 col-sm-12 col-12 ">
+                              <div class="form-group">
+                                 <input type="text" placeholder="Email" value="{{employee.email}}" readonly>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-12 col-sm-12 col-12 ">
+                  <div class="card ">
+                     <div class="card-header">
+                        <h2 class="card-titles">Inventory Details</h2>
+                     </div>
+                     <div class="card-body">
+                        <div class="row">
+                           <div class="col-xl-6 col-sm-12 col-12 ">
+                              <div class="form-group">
+                                 <label  class="form-control-label">Title:</label>
+                                 <input type="text" placeholder="Title" name="title" value="{% if employee.inventory != 'None' %}{{employee.inventory.title}}{%else%}{%endif%}">
+                              </div>
+                           </div>
+<!--                        </div>-->
+<!--                        <div class="row">-->
+                           <div class="col-xl-6 col-sm-12 col-12 ">
+                              <div class="form-group">
+                                 <!--<input type="text" placeholder="Item">-->
+                                 <label for="item" class="form-control-label">Select Item:</label>
+                                 <select class="js-example-basic-multiple" name="item" multiple="multiple">
+                                    <option>Select item</option>
+                                    <option value="Laptop" {% if "Laptop" in employee.inventory.item %}selected{% endif %}>Laptop</option>
+                                    <option value="Mobile" {% if "Mobile" in employee.inventory.item %}selected{% endif %}>Mobile</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-xl-6 col-sm-12 col-12 ">
+                              <div class="form-group">
+                                 <!--<input type="text" placeholder="Laptop">-->
+                                 <label for="is_laptop" class="form-control-label">Select Laptop:</label>
+                                 <select id="laptop" name="is_laptop">
+                                    <option>Select Laptop</option>
+                                    <option value="Windows" {% if "Windows" in employee.inventory.is_laptop %}selected{% endif %}>Windows</option>
+                                    <option value="Mac" {% if "Mac" in employee.inventory.is_laptop %}selected{% endif %}>Mac</option>
+                                 </select>
+                              </div>
+                           </div>
+<!--                        </div>-->
+<!--                        <div class="row">-->
+                           <div class="col-xl-6 col-sm-12 col-12 ">
+                              <div class="form-group">
+                                 <!--<input type="text" placeholder="Mobile">-->
+                                 <label for="mobile" class="form-control-label">Select Mobile:</label>
+                                 <select id="mobile" name="is_mobile">
+                                    <option>Select Mobile</option>
+                                    <option value="Android" {% if "Android" in employee.inventory.is_mobile %}selected{% endif %}>Android</option>
+                                    <option value="IPhone" {% if "IPhone" in employee.inventory.is_mobile %}selected{% endif %}>IPhone</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-xl-6 col-sm-12 col-12 ">
+                              <div class="form-group">
+                                 <label  class="form-control-label">Remarks:</label>
+                                 <input type="text" placeholder="Remarks" name="remarks" value="{% if employee.inventory != 'None' %}{{employee.inventory.remarks}}{%else%}{%endif%}">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-xl-12 col-sm-12 col-12 ">
+                     <div class="form-btn">
+                        {% if request.user.is_admin or request.user.is_superuser %}
+                        <button class="btn btn-apply w-auto" type="submit">Add Inventory</button>
+                        {% endif %}
+                        <!--<a class="btn btn-apply w-auto">Add Inventory</a>-->
+                        <!--<a href="#" class="btn btn-secondary">Cancel</a>-->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+
+{% endblock %}
