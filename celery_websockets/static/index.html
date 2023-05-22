@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebSocket Progress Updates</title>
+</head>
+<body>
+  <h1>WebSocket Progress Updates</h1>
+  <div id="progress"></div>
+
+  <script>
+    const socket = new WebSocket('ws://localhost:8000/ws');  // Replace with your WebSocket URL
+
+    socket.onopen = () => {
+      console.log('WebSocket connection established');
+    };
+
+    socket.onmessage = (event) => {
+      const progressDiv = document.getElementById('progress');
+      progressDiv.innerHTML += `<p>${event.data}</p>`;
+    };
+
+    socket.onclose = () => {
+      console.log('WebSocket connection closed');
+    };
+  </script>
+</body>
+</html>

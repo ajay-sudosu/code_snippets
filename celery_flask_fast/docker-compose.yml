@@ -1,0 +1,62 @@
+version: "3.7"
+
+services:
+
+  rabbitmq:
+    build: ./rabbitmq
+    container_name: 'rabbitmq'
+    expose:
+      - 6379
+    ports:
+      - 5672:5672
+      - 15672:15672
+      - 6379:6379
+    deploy:
+      restart_policy:
+        condition: any
+    volumes:
+      - /ext512/rabbitmq:/ext512/rabbitmq
+    networks:
+      - common_network
+  flask:
+    build: ./flask_fast_api
+    container_name: flask
+#    restart: always
+    expose:
+      - "8080"
+      - "8081"
+      - "10010"
+    ports:
+      - "10010:10010"
+    deploy:
+      restart_policy:
+        condition: any
+    volumes:
+      - .:/flask
+      - /ext512/socket:/ext512/socket
+      - /ext512/flask:/ext512/flask
+      - /ext512/static:/ext512/static
+    networks:
+      - common_network
+  nginx:
+    build: ./nginx
+    container_name: nginx
+#    restart: always
+    ports:
+      - "80:80"
+    deploy:
+      restart_policy:
+        condition: any
+    volumes:
+      - /ext512/socket:/ext512/socket
+      - /ext512/static:/ext512/static
+      - /ext512/nginx:/ext512/nginx
+      - /ext512/platform:/ext512/platform
+      - /ext512/ZestIOT-AppliedAI/ui/dist/ZestIOT:/ext512/ZestIOT-AppliedAI/ui/dist/ZestIOT
+    networks:
+      - common_network
+
+networks:
+  common_network:
+    external:
+      name: common_network
