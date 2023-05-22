@@ -1,0 +1,26 @@
+Flask
+uwsgi==2.0.17.1
+Flask-SQLAlchemy
+pillow
+opencv-python
+mysqlclient
+sqlalchemy-filters
+azure-storage-blob --pre
+dictalchemy
+Flask-Cors
+flask-session
+msal
+python_resumable
+PyYAML
+redis
+fastapi
+uvicorn
+gunicorn
+pika
+pandas
+celery
+flask_login
+ffmpeg
+PythonVideoConverter
+rsa
+resumable
