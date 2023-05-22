@@ -1,0 +1,16 @@
+env/
+venv/
+ENV/
+__pycache__/
+.idea/
+*.pyc
+*.fbx
+nohup.out
+*.db
+.DS_Store
+blender_files/configurator/blender/output/*
+blender_files/configurator/blender/models/*
+dump.rdb
+*.log
+.vscode/
+upload/

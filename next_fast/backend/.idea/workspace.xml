@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6d6a52d6-7504-4036-89fe-a06cf08dfb39" name="Changes" comment="added logger for exception" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FI6FTFEZkQiOUUOcFM6CpVPDly" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lovet/Downloads/test_router_mdintegration.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lovet\PycharmProjects\Next-Medical\backend" />
+      <recent name="C:\Users\lovet\PycharmProjects\Next-Medical\backend\bg_task" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lovet\PycharmProjects\Next-Medical\backend" />
+      <recent name="C:\Users\lovet\PycharmProjects\Next-Medical\backend\routers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.fast">
+    <configuration name="drchrono_sync_new" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drchrono_sync_new.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fast" type="PythonConfigurationType" factoryName="Python">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="AWS_ACCESS_KEY_ID" value="AKIAQXYVC547N3Z45WNZ" />
+        <env name="AWS_SECRET_ACCESS_KEY" value="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" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\lovet\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="uvicorn" />
+      <option name="PARAMETERS" value="main:app --reload" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_photos" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_photos.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="humhealth_csv_upload" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="AWS_ACCESS_KEY_ID" value="AKIAQXYVC547N3Z45WNZ" />
+        <env name="AWS_SECRET_ACCESS_KEY" value="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" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/humhealth_csv_upload.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mdintegrations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mdintegrations.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="visits_table_migration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/visits_table_migration.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in C:/Users/lovet/PycharmProjects/Next-Medical/backend/routers/test_router_user.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/routers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/routers/test_router_user.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.fast" />
+      <item itemvalue="Python.humhealth_csv_upload" />
+      <item itemvalue="Python.drchrono_sync_new" />
+      <item itemvalue="Python.get_photos" />
+      <item itemvalue="Python.mdintegrations" />
+      <item itemvalue="Python.visits_table_migration" />
+      <item itemvalue="Python tests.Python tests in C:/Users/lovet/PycharmProjects/Next-Medical/backend/routers/test_router_user.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests in C:/Users/lovet/PycharmProjects/Next-Medical/backend/routers/test_router_user.py" />
+        <item itemvalue="Python.visits_table_migration" />
+        <item itemvalue="Python.mdintegrations" />
+        <item itemvalue="Python.get_photos" />
+        <item itemvalue="Python.drchrono_sync_new" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d6a52d6-7504-4036-89fe-a06cf08dfb39" name="Changes" comment="" />
+      <created>1664167146473</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664167146473</updated>
+    </task>
+    <task id="LOCAL-00032" summary="added remaining logger in healthie.">
+      <created>1670244374233</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1670244374233</updated>
+    </task>
+    <task id="LOCAL-00033" summary="removed use of twilio in db_client.py">
+      <created>1670333004960</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1670333004960</updated>
+    </task>
+    <task id="LOCAL-00034" summary="humhealth ep and csv upload script">
+      <created>1671216687488</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1671216687488</updated>
+    </task>
+    <task id="LOCAL-00035" summary="resolved bugs">
+      <created>1671220449773</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1671220449773</updated>
+    </task>
+    <task id="LOCAL-00036" summary="resolved bugs v2">
+      <created>1671222809592</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1671222809592</updated>
+    </task>
+    <task id="LOCAL-00037" summary="resolved bugs v3">
+      <created>1671461642265</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1671461642265</updated>
+    </task>
+    <task id="LOCAL-00038" summary="added logs in humhealth_csv_upload script">
+      <created>1671467477104</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1671467477104</updated>
+    </task>
+    <task id="LOCAL-00039" summary="added logs in humhealth_csv_upload script">
+      <created>1671468324443</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1671468324443</updated>
+    </task>
+    <task id="LOCAL-00040" summary="added logs in humhealth_csv_upload script">
+      <created>1671470291935</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1671470291935</updated>
+    </task>
+    <task id="LOCAL-00041" summary="file name bug">
+      <created>1671471164665</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1671471164665</updated>
+    </task>
+    <task id="LOCAL-00042" summary="added secure_s3_download ep">
+      <created>1671741798763</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1671741798763</updated>
+    </task>
+    <task id="LOCAL-00043" summary="comments and logger added.">
+      <created>1671800393075</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1671800393075</updated>
+    </task>
+    <task id="LOCAL-00044" summary="renamed function name">
+      <created>1671801025556</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1671801025556</updated>
+    </task>
+    <task id="LOCAL-00045" summary="moved download_s3_file to utils.py file">
+      <created>1671810197813</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1671810197813</updated>
+    </task>
+    <task id="LOCAL-00046" summary="testing test-vpc-ep bucket policy">
+      <created>1671814595847</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1671814595847</updated>
+    </task>
+    <task id="LOCAL-00047" summary="added response error if access denied">
+      <created>1672077192155</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1672077192155</updated>
+    </task>
+    <task id="LOCAL-00048" summary="changed bucket">
+      <created>1672085700607</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1672085700607</updated>
+    </task>
+    <task id="LOCAL-00049" summary="changed code for drchronodoc">
+      <created>1672085935586</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1672085935586</updated>
+    </task>
+    <task id="LOCAL-00050" summary="tested secure s3 download ep">
+      <created>1672157904307</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1672157904307</updated>
+    </task>
+    <task id="LOCAL-00051" summary="changed secure-s3-download ep according to buckets">
+      <created>1672158365745</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1672158365747</updated>
+    </task>
+    <task id="LOCAL-00052" summary="removed try except for selecting bucket in utils.py.">
+      <created>1672159906024</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1672159906024</updated>
+    </task>
+    <task id="LOCAL-00053" summary="removed try except for selecting bucket in utils.py.">
+      <created>1672173615664</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1672173615664</updated>
+    </task>
+    <task id="LOCAL-00054" summary="changed content type for actual pdf in secure-s3-download.">
+      <created>1672237495612</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1672237495613</updated>
+    </task>
+    <task id="LOCAL-00055" summary="addded extra line re-creating PR">
+      <created>1672245727289</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1672245727289</updated>
+    </task>
+    <task id="LOCAL-00056" summary="update script for visits drchrono_res and drchrono_req">
+      <created>1672343666671</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1672343666671</updated>
+    </task>
+    <task id="LOCAL-00057" summary="update script for visits drchrono_res and drchrono_req">
+      <created>1672344076890</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1672344076890</updated>
+    </task>
+    <task id="LOCAL-00058" summary="update script for visits drchrono_res and drchrono_req">
+      <created>1672346636158</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1672346636158</updated>
+    </task>
+    <task id="LOCAL-00059" summary="removed bug">
+      <created>1672346700305</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1672346700305</updated>
+    </task>
+    <task id="LOCAL-00060" summary="drchrono_sync_new messsage notification s3 url">
+      <created>1672421254392</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1672421254392</updated>
+    </task>
+    <task id="LOCAL-00061" summary="added blank line">
+      <created>1672754420770</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1672754420770</updated>
+    </task>
+    <task id="LOCAL-00062" summary="changed state name to abbreviation">
+      <created>1672762523640</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1672762523640</updated>
+    </task>
+    <task id="LOCAL-00063" summary="changed state name to abbreviation">
+      <created>1672766542643</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1672766542644</updated>
+    </task>
+    <task id="LOCAL-00064" summary="added router for gogo_meds and function to insert into gogomeds_orders db table">
+      <created>1672778864377</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1672778864377</updated>
+    </task>
+    <task id="LOCAL-00065" summary="changes in humhealth csv upload for state">
+      <created>1672838530569</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1672838530569</updated>
+    </task>
+    <task id="LOCAL-00066" summary="get-questions ep added">
+      <created>1672862471359</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1672862471359</updated>
+    </task>
+    <task id="LOCAL-00067" summary="get-questions ep changed response format">
+      <created>1672928925146</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1672928925146</updated>
+    </task>
+    <task id="LOCAL-00068" summary="removed harded coded creds, now coming from secrets manager">
+      <created>1672929405231</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1672929405231</updated>
+    </task>
+    <task id="LOCAL-00069" summary="no visits bug.">
+      <created>1673023391664</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1673023391664</updated>
+    </task>
+    <task id="LOCAL-00070" summary="changed prod settings">
+      <created>1673370404792</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1673370404792</updated>
+    </task>
+    <task id="LOCAL-00071" summary="added ggm_webhook">
+      <created>1673458835354</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1673458835354</updated>
+    </task>
+    <task id="LOCAL-00072" summary="added ggm_webhook">
+      <created>1673615389961</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1673615389961</updated>
+    </task>
+    <task id="LOCAL-00073" summary="s3 v4 signature added">
+      <created>1673615751840</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1673615751840</updated>
+    </task>
+    <task id="LOCAL-00074" summary="time to expire 5 days">
+      <created>1673616100904</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1673616100904</updated>
+    </task>
+    <task id="LOCAL-00075" summary="removed aws keys from whole codebase">
+      <created>1673631343193</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1673631343193</updated>
+    </task>
+    <task id="LOCAL-00076" summary="added secrets aws keys">
+      <created>1673633897986</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1673633897986</updated>
+    </task>
+    <task id="LOCAL-00077" summary="updated zendesk function- zendesk_update_db_elig_info">
+      <created>1673885260411</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1673885260412</updated>
+    </task>
+    <task id="LOCAL-00078" summary="update comment in zendesk_update_db_elig_info">
+      <created>1673886300205</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1673886300205</updated>
+    </task>
+    <task id="LOCAL-00079" summary="added logger for exception">
+      <created>1674155620925</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1674155620925</updated>
+    </task>
+    <task id="LOCAL-00080" summary="added logger for exception">
+      <created>1674156013126</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1674156013126</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tested secure s3 download ep" />
+    <MESSAGE value="changed secure-s3-download ep according to buckets" />
+    <MESSAGE value="removed try except for selecting bucket in utils.py." />
+    <MESSAGE value="changed content type for actual pdf in secure-s3-download." />
+    <MESSAGE value="addded extra line re-creating PR" />
+    <MESSAGE value="update script for visits drchrono_res and drchrono_req" />
+    <MESSAGE value="removed bug" />
+    <MESSAGE value="drchrono_sync_new messsage notification s3 url" />
+    <MESSAGE value="added blank line" />
+    <MESSAGE value="changed state name to abbreviation" />
+    <MESSAGE value="added router for gogo_meds and function to insert into gogomeds_orders db table" />
+    <MESSAGE value="changes in humhealth csv upload for state" />
+    <MESSAGE value="get-questions ep added" />
+    <MESSAGE value="get-questions ep changed response format" />
+    <MESSAGE value="removed harded coded creds, now coming from secrets manager" />
+    <MESSAGE value="no visits bug." />
+    <MESSAGE value="changed prod settings" />
+    <MESSAGE value="added ggm_webhook" />
+    <MESSAGE value="s3 v4 signature added" />
+    <MESSAGE value="time to expire 5 days" />
+    <MESSAGE value="removed aws keys from whole codebase" />
+    <MESSAGE value="added secrets aws keys" />
+    <MESSAGE value="updated zendesk function- zendesk_update_db_elig_info" />
+    <MESSAGE value="update comment in zendesk_update_db_elig_info" />
+    <MESSAGE value="added logger for exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="added logger for exception" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/get_photos.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

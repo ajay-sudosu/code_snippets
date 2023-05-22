@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "teak-mantis-356816",
+  "private_key_id": "c90d54a6344d11dffa8caafbaf08ba8982ca9e44",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDQJpQQCjvt/A5M\n+i9mReEdMXkgkfbw+/gyaZJU2NJ+2uZK28zD8AxnYYXD2zK8wqcKVoeTwaDgU0J5\nGw/ZOY+4umgaRmK7wJJ4PHN+/MgwyPJ3YAm1LXLOFifZwxkZIuXqJP3Qchjp7YQ3\npFkjsyh+Q+dEUuUhVsYv9i8UQTZbjdoA6xr3YMHz3CYIcqzJrq0vUrYCc1xi6Nci\nF5KpVbHb3UGxcpWjvl6C5DxroO5tLLitgDv+bjSRhUYmhWB3qveAqsfrGpQ/dNq3\nLrlT6AiKJ7sVq2o+y+ee7rlQ5Dzj7dIA53DHpLRvn9TJGnMyR2/DqsES5p2c3FAI\nyl1qTfsjAgMBAAECggEAB9ULyTa5XpEXcKoRUoXanKCZ8DHN2u+APVVfnjWyZfeS\npspygATuUo2G3QHIfPXOF0N+Qn8MsKQxYiE0jXXvBIJvHF39pRbv6/pKVkLovX0y\nMm+4rcqSAVMwGK+QqDN59z+BFXDVoye+y+ExQXiiU232q8l6ubBsMK3Qw7BYfUVd\nxo1qXqf7/qrQ8ONxqvJlFqzvRyM3p+yKMZ8kM6p0evupA4pO2MslT+7dH1z9T17H\nI9wlf34YAkLLqycmql2oq0n/qpRt0jDT01DuK4f44dshgDwOnqO+BGtPzo2bzgzQ\n5TrNKCv09C6yoKnKAscH5E7uevODW5iPZNsSP0DfUQKBgQDvMrycOVcZ54zKmLJW\nks233t5RbAPCVhBnmNe+UwFD9sFVMQkROMpE4dRjDihqYIT0qRgfMoP204aSbcwz\nwtAaiN06zTtzmVDERA/tGdYZeWxFuYu+KO9AMMfJSvVW2Gg1LbiIqlI0KbXbDmZy\nhpxgaFPWrrOa6S5uUc/OFWoYDQKBgQDexYufVPGBJ6HTDvVuQhV7vkkBIN6ZGefJ\noMeiN1NgQAideuByCFVBy9BqDiWapKByJbNWwtJqjVPVxvbbk2TTUaJ5VRbvywfZ\nZLc/M9OalJJqa/Lxxk3yx+pJuwqu2kArCtucBfPqWrZmlyf+iRgzWCPCH+RKAmCK\n/Rt1Iybj7wKBgG9/kgWsgNp1Yd6KYQ8T7UrZW35OwE3VOl5gE6kHHh7lJeelLNnX\nRAnpzsvBrLsxdKhrLfBU5simfyNAhSBXnhPQWndvdVgETm6+X0Ihefhz7jFuNSKW\nCDg+xNIi28v4olKvlkY2Ro1EKB4NT1nxP3F9EB+RXe1G5rrL7fbdao/9AoGBAJ89\nuMuhTa0UJnIXbEtvg6nb4JWk6FmqkeyoOGv1fmz7+OyRTGVXHZKV3ZoiGLFNYr+V\nwXeQdhbihX335rgYyWbhIPH4aBfrGuZEP1U3d9g0weC+34ACT+/vBcPEpyNMMbhS\n357NBomMZHw7KsShPSJeq9j1MRvSTS6tNPZrtT4TAoGBAKDJSzNJdHMjDW2G/TGl\nT+lDIqjTCHW+JalKavTDhrKca7MhmEe1vXKhIB/DCNx2N6+x6uqHns0ZCTWHdkTq\nOGVLMHm1LjogiynLQDZ3UXRT5CNbg/UhuH6tyPxIbyNd3iBagVSf6lFz/JXLDjX0\n+Q1saq3ha1EBZ+LKF7mE+9OC\n-----END PRIVATE KEY-----\n",
+  "client_email": "nextmeds@teak-mantis-356816.iam.gserviceaccount.com",
+  "client_id": "109620881007965035551",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nextmeds%40teak-mantis-356816.iam.gserviceaccount.com"
+}
