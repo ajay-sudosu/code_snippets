@@ -1,6 +1,6 @@
 from subprocess import Popen, PIPE
 
-sudo_password = 'ajaysingh03'
+sudo_password = 'test'
 command = 'docker ps'.split()
 p = Popen(['sudo', '-Ssd'] + command, stdin=PIPE, stderr=PIPE,
           universal_newlines=True)
